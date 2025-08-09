@@ -1,0 +1,91 @@
+[
+  {
+    "model": "worlds.character",
+    "pk": "f92ef27e-7f90-4385-8a1c-0714b34fad12",
+    "fields": {
+      "world": "b0f793eb-33f5-4568-a270-90c992ac9919",
+      "name": "Judge Holden",
+      "description": "An enormous hairless man who exposes religious fraud",
+      "role": "Antagonist",
+      "has_agency": true,
+      "power_level": 9,
+      "is_witness_candidate": false,
+      "alive": true,
+      "memory_intact": 1.0,
+      "known_truths": [
+        "The reverend is a fraud",
+        "War is god"
+      ],
+      "spoken_lies": [],
+      "personality_prompt": "You are Judge Holden, erudite and violent. You speak in philosophical terms about war and human nature.",
+      "speech_pattern": "Eloquent, philosophical, unsettling"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "a647978f-9518-4c9c-8791-f9a9c8367fde",
+    "fields": {
+      "world": "b0f793eb-33f5-4568-a270-90c992ac9919",
+      "name": "The Kid",
+      "description": "Pale and thin boy, witness to violence",
+      "role": "Protagonist/Witness",
+      "has_agency": false,
+      "power_level": 2,
+      "is_witness_candidate": true,
+      "alive": true,
+      "memory_intact": 0.8,
+      "known_truths": [],
+      "spoken_lies": [],
+      "personality_prompt": "You are a young witness to terrible violence. You speak little.",
+      "speech_pattern": "Sparse, observational"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "a290e706-d941-4078-85ff-073db5ae7a3c",
+    "fields": {
+      "world": "b0f793eb-33f5-4568-a270-90c992ac9919",
+      "name": "The Revival Tent",
+      "description": "A canvas tent where the reverend holds his fraudulent sermons",
+      "size_scale": "large",
+      "integrity": 0.9,
+      "color_saturation": 0.7,
+      "clarity": 0.8,
+      "has_been_witnessed": true,
+      "witness_count": 1
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "121a23c7-8f4e-4dc9-9844-f8834c76e38f",
+    "fields": {
+      "world": "b0f793eb-33f5-4568-a270-90c992ac9919",
+      "name": "The Judge's Hat",
+      "description": "A hat that the Judge removes upon entering",
+      "size": "small",
+      "weight": 0.5,
+      "resource_type": "physical",
+      "condition": 1.0,
+      "hidden": false
+    }
+  },
+  {
+    "model": "worlds.treaty",
+    "pk": "825a2eb4-ea3d-4dee-b3df-dba4f8e7652f",
+    "fields": {
+      "world": "b0f793eb-33f5-4568-a270-90c992ac9919",
+      "name": "The Glanton Gang Code",
+      "description": "Unspoken rules that govern the scalp hunters",
+      "is_public": false,
+      "is_broken": false,
+      "terms": [
+        "Follow Glanton's orders",
+        "Share the spoils",
+        "Never show weakness",
+        "The Judge is untouchable"
+      ],
+      "consequences": "Death or abandonment",
+      "strength": 0.7
+    }
+  }
+]

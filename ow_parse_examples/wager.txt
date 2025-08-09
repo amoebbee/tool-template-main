@@ -1,0 +1,637 @@
+From David Grann's **<a href="https://en.wikipedia.org/wiki/The_Wager:_A_Tale_of_Shipwreck,_Mutiny_and_Murder">The Wager: A Tale of Shipwreck, Mutiny and Murder</a>** (2021)
+
+<details>
+<summary style="cursor: pointer; font-weight: bold; margin: 20px 0;">The First Lieutenant</summary>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #4a5568; line-height: 1.8;">
+
+Each man in <strong>the squadron</strong> carried, along with a <strong>sea chest</strong>, his own burdensome story. Perhaps it was of a scorned love, or a secret prison conviction, or a pregnant wife left on shore weeping. Perhaps it was a <strong>hunger for fame and fortune</strong>, or a <strong>dread of death</strong>.
+
+<strong>David Cheap</strong>, the first lieutenant of the <strong>Centurion</strong>, the squadron's flagship, was no different. A burly Scotsman in his early forties with a protracted nose and intense eyes, he was in flight—from squabbles with his brother over their inheritance, from creditors chasing him, from debts that made it impossible for him to find a suitable bride.
+
+</div>
+</div>
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #fbbf24; line-height: 1.6;">
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">business</span><strong><a href="/docs/specification/element_categories/institution">Institution</a></strong> 'The Squadron'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Military - Fleet</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">webhook</span><strong><a href="/docs/specification/element_categories/object">Object</a></strong> 'Sea Chest'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Item - Container</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">flaky</span><strong><a href="/docs/specification/element_categories/trait">Trait</a></strong> 'Hunger for Fame and Fortune'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Ambition</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">flaky</span><strong><a href="/docs/specification/element_categories/trait">Trait</a></strong> 'Fear of Death'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Dread</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">crib</span><strong><a href="/docs/specification/element_categories/species">Species</a></strong> 'Human'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Folk</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">crib</span><strong><a href="/docs/specification/element_categories/species">Species</a></strong> 'Scottish'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Ethnicity</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">person_4</span><strong><a href="/docs/specification/element_categories/character">Character</a></strong> 'David Cheap'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Human - Commander</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">psychology</span><strong><a href="/docs/specification/element_categories/trait">Trait</a></strong> 'Protracted Nose'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Physical - Distinctive</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">military_tech</span><strong><a href="/docs/specification/element_categories/title">Title</a></strong> 'First Lieutenant of the Centurion'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Leadership - Executive</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">webhook</span><strong><a href="/docs/specification/element_categories/object">Object</a></strong> 'Centurion'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Vehicle - Ship</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">saved_search</span><strong><a href="/docs/specification/element_categories/event">Event</a></strong> 'Cheap's Troubles'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Personal</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">saved_search</span><strong><a href="/docs/specification/element_categories/event">Event</a></strong> 'Inheritance Dispute'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Personal - Legal</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">person_4</span><strong><a href="/docs/specification/element_categories/character">Character</a></strong> 'David Cheap's Brother'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Human - Relation</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">groups_3</span><strong><a href="/docs/specification/element_categories/collective">Collective</a></strong> 'Cheap's Creditors'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Social - Financial</span>
+</div>
+
+<div style="margin-bottom: 0;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">saved_search</span><strong><a href="/docs/specification/element_categories/event">Event</a></strong> 'Posting on the Centurion'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Military - Assignment</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #4a5568; line-height: 1.8;">
+
+The <strong>wooden world of a ship</strong>—a world bound by the <strong>Navy's rigid regulations</strong> and the <strong>laws of the sea</strong> and, most of all, by the hardened fellowship of men—had provided him a refuge.
+
+The problem was that he could not get away from the damned land. He was trapped—cursed, really—at the <strong>dockyard in Portsmouth</strong>, along the <strong>English Channel</strong>, struggling with feverish futility to get the Centurion fitted out and ready to sail.
+
+</div>
+</div>
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #fbbf24; line-height: 1.6;">
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Wooden World of a Ship'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Concept - Social</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">gpp_bad</span><strong><a href="/docs/specification/element_categories/law">Law</a></strong> 'Navy Regulations'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Military - Code</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">gpp_bad</span><strong><a href="/docs/specification/element_categories/law">Law</a></strong> 'Laws of the Sea'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Maritime - International</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">castle</span><strong><a href="/docs/specification/element_categories/location">Location</a></strong> 'Portsmouth'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Settlement - Port</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">castle</span><strong><a href="/docs/specification/element_categories/location">Location</a></strong> 'Portsmouth Dockyard'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Industrial - Naval</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">castle</span><strong><a href="/docs/specification/element_categories/location">Location</a></strong> 'English Channel'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Geographic - Water</span>
+</div>
+
+<div style="margin-bottom: 0;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Stuck at Portsmouth'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Situation - Stasis</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</details>
+
+<details>
+<summary style="cursor: pointer; font-weight: bold; margin: 20px 0;">Additional Passages</summary>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #4a5568; line-height: 1.8;">
+
+<strong>Onshore</strong>, Cheap seemed doomed, unable to navigate past life's unexpected shoals. Yet as he perched on the <strong>quarterdeck</strong> of a British man-of-war, cruising the vast oceans with a <strong>cocked hat</strong> and <strong>spyglass</strong>, he brimmed with <strong>confidence</strong>—even, some would say, a touch of <strong>haughtiness</strong>.
+
+</div>
+</div>
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #fbbf24; line-height: 1.6;">
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">castle</span><strong><a href="/docs/specification/element_categories/location">Location</a></strong> 'Quarterdeck'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Component - Command</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">webhook</span><strong><a href="/docs/specification/element_categories/object">Object</a></strong> 'Cocked Hat'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Item - Clothing</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">webhook</span><strong><a href="/docs/specification/element_categories/object">Object</a></strong> 'Spyglass'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Item - Instrument</span>
+</div>
+
+<div style="margin-bottom: 0;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">flaky</span><strong><a href="/docs/specification/element_categories/trait">Trait</a></strong> 'Confident on Water'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Temperament</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #4a5568; line-height: 1.8;">
+
+Suddenly he felt a crystalline order, a clarity of purpose. And Cheap's newest posting, despite the innumerable risks that it carried, from <strong>plagues</strong> and drowning to enemy <strong>cannon fire</strong>, offered what he longed for: a chance to finally claim a <strong>wealthy prize</strong> and rise to captain his own ship, becoming a lord of the sea.
+
+</div>
+</div>
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #fbbf24; line-height: 1.6;">
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">thunderstorm</span><strong><a href="/docs/specification/element_categories/phenomenon">Phenomenon</a></strong> 'Plague'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Biological - Disease</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Cannon Fire'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Technology - Military</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Wealthy Prize'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Situation - Acquisition</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Captaincy'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Title - Leadership</span>
+</div>
+
+<div style="margin-bottom: 0;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">flaky</span><strong><a href="/docs/specification/element_categories/trait">Trait</a></strong> 'Lieutenant's Hope'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Ambition</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</details>
+
+<details>
+<summary style="cursor: pointer; font-weight: bold; margin: 20px 0;">The Dockyard</summary>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #4a5568; line-height: 1.8;">
+
+Its massive wooden <strong>hull</strong>, 144 feet long and 40 feet wide, was moored at a slip. <strong>Carpenters</strong>, caulkers, <strong>riggers</strong>, and <strong>joiners</strong> combed over its decks like <strong>rats</strong> (which were also plentiful).
+
+</div>
+</div>
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #fbbf24; line-height: 1.6;">
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">webhook</span><strong><a href="/docs/specification/element_categories/object">Object</a></strong> 'Centurion's Hull'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Component</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Carpenter'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Occupation</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Rigger'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Occupation</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Joiner'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Occupation</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">groups_3</span><strong><a href="/docs/specification/element_categories/collective">Collective</a></strong> 'Centurion Crew'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Workforce - Crew</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">crib</span><strong><a href="/docs/specification/element_categories/species">Species</a></strong> 'Rat'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Fauna</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">bug_report</span><strong><a href="/docs/specification/element_categories/creature">Creature</a></strong> 'Fattest Rat on the Centurion'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Animal - Omnivore</span>
+</div>
+
+<div style="margin-bottom: 0;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">groups_3</span><strong><a href="/docs/specification/element_categories/collective">Collective</a></strong> 'Centurion Rats'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Cohort - Survivors</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #4a5568; line-height: 1.8;">
+
+A cacophony of <strong>hammers</strong> and <strong>saws</strong>. The <strong>cobblestone streets</strong> past the shipyard were congested with rattling wheelbarrows and horse-drawn wagons, with porters, peddlers, pickpockets, sailors, and prostitutes.
+
+</div>
+</div>
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #fbbf24; line-height: 1.6;">
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Hammer'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Object - Tool</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Saw'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Object - Tool</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">webhook</span><strong><a href="/docs/specification/element_categories/object">Object</a></strong> 'Rusty Saw'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Tool</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">saved_search</span><strong><a href="/docs/specification/element_categories/event">Event</a></strong> 'Noise at the shipyard'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Situation - Noise</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">castle</span><strong><a href="/docs/specification/element_categories/location">Location</a></strong> 'Cobblestone Streets'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Settlement - Roads</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">groups_3</span><strong><a href="/docs/specification/element_categories/collective">Collective</a></strong> 'Portsmouth Populace'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Community - Resident</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">saved_search</span><strong><a href="/docs/specification/element_categories/event">Event</a></strong> 'Shipyard Congestion'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Situation - Movement</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Porter'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Occupation</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Peddler'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Occupation</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Pickpocket'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Occupation</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Sailor'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Occupation</span>
+</div>
+
+<div style="margin-bottom: 0;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Prostitute'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Occupation</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #4a5568; line-height: 1.8;">
+
+Periodically, a <strong>boatswain</strong> blew a chilling <strong>whistle</strong>, and crewmen stumbled from <strong>ale shops</strong>, parting from old or new sweethearts, hurrying to their departing ships in order to avoid their officers' <strong>lashes</strong>.
+
+</div>
+</div>
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #fbbf24; line-height: 1.6;">
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">military_tech</span><strong><a href="/docs/specification/element_categories/title">Title</a></strong> 'Boatswain'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Leadership - Executive</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Boatswain'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Title - Leadership</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">webhook</span><strong><a href="/docs/specification/element_categories/object">Object</a></strong> 'Boatswain's Whistle'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Cultural - Signal</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Boatswain's Whistle'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Item - Instrument</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Ale Shop'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Object - Building</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">saved_search</span><strong><a href="/docs/specification/element_categories/event">Event</a></strong> 'Boatswain Whistles'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Military - Summon</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">saved_search</span><strong><a href="/docs/specification/element_categories/event">Event</a></strong> 'Crewmen Return'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Military - Deployment</span>
+</div>
+
+<div style="margin-bottom: 0;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Officer's Lash'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Punishment - Professional</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #4a5568; line-height: 1.8;">
+
+It was January 1740, and the <strong>British Empire</strong> was racing to mobilize for war against its imperial rival <strong>Spain</strong>.
+
+</div>
+</div>
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #fbbf24; line-height: 1.6;">
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">business</span><strong><a href="/docs/specification/element_categories/institution">Institution</a></strong> 'British Empire'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Sovereignty - Imperial</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">business</span><strong><a href="/docs/specification/element_categories/institution">Institution</a></strong> 'Spanish Empire'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Sovereignty - Imperial</span>
+</div>
+
+<div style="margin-bottom: 0;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">saved_search</span><strong><a href="/docs/specification/element_categories/event">Event</a></strong> 'British War Mobilization'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Military - Buildup</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</details>
+
+<details>
+<summary style="cursor: pointer; font-weight: bold; margin: 20px 0;">George Anson</summary>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #4a5568; line-height: 1.8;">
+
+And in a move that had suddenly raised Cheap's prospects, the captain under whom he served on the Centurion, <strong>George Anson</strong>, had been plucked by the <strong>Admiralty</strong> to be a <strong>commodore</strong> and lead the squadron of five warships against the Spanish.
+
+</div>
+</div>
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #fbbf24; line-height: 1.6;">
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">saved_search</span><strong><a href="/docs/specification/element_categories/event">Event</a></strong> 'Anson's Promotion'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Professional - Promotion</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">person_4</span><strong><a href="/docs/specification/element_categories/character">Character</a></strong> 'George Anson'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Human - Leader</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">business</span><strong><a href="/docs/specification/element_categories/institution">Institution</a></strong> 'Admiralty'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Division - Strategic</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'British Commodore'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Title - Leadership</span>
+</div>
+
+<div style="margin-bottom: 0;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">military_tech</span><strong><a href="/docs/specification/element_categories/title">Title</a></strong> 'Commodore'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Leadership - Commanding</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #4a5568; line-height: 1.8;">
+
+The promotion was unexpected. As the son of an obscure country squire, Anson did not wield the level of <strong>patronage</strong>, the grease—or "interest," as it was more politely called—that propelled many officers up the pole, along with their men.
+
+</div>
+</div>
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #fbbf24; line-height: 1.6;">
+
+<div style="margin-bottom: 0;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Patronage'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Situation - Acquisition</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #4a5568; line-height: 1.8;">
+
+Anson, then forty-two, had joined the Navy at the age of fourteen, and served for nearly three decades without leading a major <strong>military campaign</strong> or snaring a <strong>lucrative prize</strong>.
+
+</div>
+</div>
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #fbbf24; line-height: 1.6;">
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Anson's Career'<br>
+<span style="color: #a0aec0; margin-left: 40px;">History - Professional</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Military Campaign Leadership'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Occupation - Military</span>
+</div>
+
+<div style="margin-bottom: 0;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Prize Capture'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Situation - Acquisition</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #4a5568; line-height: 1.8;">
+
+Tall, with a long face and a high forehead, he had a <strong>remoteness</strong> about him. His <strong>blue eyes were inscrutable</strong>, and outside the company of a few trusted friends he <strong>rarely opened his mouth</strong>.
+
+</div>
+</div>
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #fbbf24; line-height: 1.6;">
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">flaky</span><strong><a href="/docs/specification/element_categories/trait">Trait</a></strong> 'Remoteness'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Temperament</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">flaky</span><strong><a href="/docs/specification/element_categories/trait">Trait</a></strong> 'Inscrutable Blue Eyes'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Physical</span>
+</div>
+
+<div style="margin-bottom: 0;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">flaky</span><strong><a href="/docs/specification/element_categories/trait">Trait</a></strong> 'Usually Silent'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Social</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #4a5568; line-height: 1.8;">
+
+One statesman, after meeting with him, noted, "Anson, as usual, said little." Anson corresponded even more sparingly, as if he doubted the ability of words to convey what he saw or felt. "He loved reading little, and writing, or dictating his own letters less, and that seeming negligence…drew upon him the ill will of many," a relative wrote. A diplomat later quipped that Anson was so unknowing about the world that he'd been "round it, but never in it."
+
+</div>
+</div>
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #fbbf24; line-height: 1.6;">
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">flaky</span><strong><a href="/docs/specification/element_categories/trait">Trait</a></strong> 'Withdrawn'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Temperament</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">saved_search</span><strong><a href="/docs/specification/element_categories/event">Event</a></strong> 'Comment On Anson'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Situation - Social</span>
+</div>
+
+<div style="margin-bottom: 0;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Anson Being Aggravating'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Situation - Social</span>
+</div>

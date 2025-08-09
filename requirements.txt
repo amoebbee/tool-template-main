@@ -1,0 +1,51 @@
+# Core Django
+django==4.2.11
+django-ninja==1.1.0
+django-cors-headers==4.3.1
+
+# Database
+psycopg2-binary==2.9.9
+redis==5.0.1
+
+# OnlyWorlds Integration
+requests==2.31.0
+pydantic==2.5.3
+
+# Async & Background Tasks
+celery==5.3.4
+django-celery-beat==2.5.0
+channels==4.0.0
+channels-redis==4.1.0
+
+# LLM Integration
+anthropic==0.18.1
+openai==1.12.0
+tiktoken==0.6.0
+
+# Document Parsing
+pypdf2==3.0.1
+python-docx==1.1.0
+beautifulsoup4==4.12.3
+markdown==3.5.2
+
+# Text Processing
+nltk==3.8.1
+spacy==3.7.4
+textblob==0.18.0
+
+# Utils
+python-dotenv==1.0.1
+uuid7==0.1.0
+pendulum==3.0.0
+
+# Development
+django-debug-toolbar==4.3.0
+pytest==8.0.2
+pytest-django==4.8.0
+black==24.2.0
+flake8==7.0.0
+
+# Production
+gunicorn==21.2.0
+whitenoise==6.6.0
+django-storages==1.14.2

@@ -1,0 +1,56 @@
+{
+  "name": "endless-nights-engine",
+  "version": "0.1.0",
+  "description": "A witness engine where knowledge has weight and nights never end",
+  "author": "Grimbert",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npm run dev:frontend",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && python manage.py runserver",
+    "dev:all": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\" \"npm run dev:redis\"",
+    "dev:redis": "redis-server",
+    "dev:celery": "cd backend && celery -A endless_nights worker --loglevel=info",
+    "init": "npm run init:backend && npm run init:frontend",
+    "init:backend": "cd backend && pip install -r requirements.txt && python manage.py migrate",
+    "init:frontend": "cd frontend && npm install",
+    "parse": "cd backend && python manage.py parse_world",
+    "test": "npm run test:frontend && npm run test:backend",
+    "test:frontend": "cd frontend && npm test",
+    "test:backend": "cd backend && python manage.py test",
+    "build": "npm run build:frontend",
+    "build:frontend": "cd frontend && npm run build",
+    "clean": "rm -rf frontend/node_modules backend/venv",
+    "world:import": "cd backend && python manage.py import_onlyworlds",
+    "world:adapt": "cd backend && python manage.py adapt_world",
+    "world:export": "cd backend && python manage.py export_to_onlyworlds",
+    "serve:static": "python -m http.server 8000",
+    "serve:node": "npx http-server -p 8000"
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "@types/node": "^20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/endless-nights-engine"
+  },
+  "keywords": [
+    "onlyworlds",
+    "witness-engine",
+    "narrative",
+    "game",
+    "degradation"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "python": ">=3.9.0"
+  },
+  "config": {
+    "defaultWorld": "efteling",
+    "defaultWitnessSize": "thumb"
+  }
+}

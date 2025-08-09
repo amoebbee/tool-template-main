@@ -1,0 +1,16 @@
+# Core Django
+django==4.2.11
+django-ninja==1.1.0
+django-cors-headers==4.3.1
+
+# OnlyWorlds Integration
+requests==2.31.0
+pydantic==2.5.3
+
+# Utils
+python-dotenv==1.0.1
+uuid7==0.1.0
+pendulum==3.0.0
+
+# Development (minimal for now)
+black==24.2.0

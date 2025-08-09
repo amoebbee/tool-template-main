@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endless Nights - Database Inspector</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(135deg, #1a1a2e 0%, #0f0f1e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: #9c88ff;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        .dashboard {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .sidebar {
+            background: rgba(30, 30, 50, 0.8);
+            border-radius: 8px;
+            padding: 20px;
+            border: 1px solid #333;
+        }
+        
+        .main-content {
+            background: rgba(30, 30, 50, 0.8);
+            border-radius: 8px;
+            padding: 20px;
+            border: 1px solid #333;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .stat-card {
+            background: rgba(20, 20, 40, 0.9);
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #444;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 24px;
+            color: #9c88ff;
+            font-weight: bold;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: #888;
+            margin-top: 5px;
+        }
+        
+        .controls {
+            background: rgba(40, 40, 60, 0.5);
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+        
+        button {
+            background: #9c88ff;
+            color: #1a1a2e;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            transition: all 0.3s;
+        }
+        
+        button:hover {
+            background: #7c68df;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(156, 136, 255, 0.3);
+        }
+        
+        button.danger {
+            background: #e74c3c;
+        }
+        
+        button.danger:hover {
+            background: #c0392b;
+        }
+        
+        .world-list {
+            margin-top: 20px;
+        }
+        
+        .world-item {
+            background: rgba(40, 40, 60, 0.5);
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+        }
+        
+        .world-item:hover {
+            border-color: #9c88ff;
+            transform: translateX(5px);
+        }
+        
+        .world-item.selected {
+            border-color: #9c88ff;
+            background: rgba(156, 136, 255, 0.1);
+        }
+        
+        .world-name {
+            font-size: 16px;
+            font-weight: bold;
+            color: #9c88ff;
+            margin-bottom: 5px;
+        }
+        
+        .world-stats {
+            font-size: 12px;
+            color: #888;
+        }
+        
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #333;
+        }
+        
+        .tab {
+            padding: 10px 20px;
+            background: transparent;
+            border: none;
+            color: #888;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -2px;
+        }
+        
+        .tab.active {
+            color: #9c88ff;
+            border-bottom-color: #9c88ff;
+        }
+        
+        .element-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        
+        .element-card {
+            background: rgba(20, 20, 40, 0.9);
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #444;
+        }
+        
+        .element-name {
+            font-weight: bold;
+            color: #9c88ff;
+            margin-bottom: 8px;
+        }
+        
+        .element-desc {
+            font-size: 12px;
+            color: #aaa;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        
+        .element-stats {
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            color: #666;
+        }
+        
+        .degradation-bar {
+            width: 100%;
+            height: 4px;
+            background: #333;
+            border-radius: 2px;
+            margin-top: 5px;
+            overflow: hidden;
+        }
+        
+        .degradation-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #e74c3c, #f39c12, #2ecc71);
+            transition: width 0.3s;
+        }
+        
+        .fixture-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .fixture-item {
+            background: rgba(40, 40, 60, 0.5);
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .fixture-info {
+            flex: 1;
+        }
+        
+        .fixture-name {
+            font-weight: bold;
+            color: #9c88ff;
+            font-size: 14px;
+        }
+        
+        .fixture-meta {
+            font-size: 11px;
+            color: #666;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+        
+        .error {
+            background: rgba(231, 76, 60, 0.2);
+            border: 1px solid #e74c3c;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        
+        .success {
+            background: rgba(46, 204, 113, 0.2);
+            border: 1px solid #2ecc71;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        
+        .hidden-truth {
+            background: rgba(100, 50, 150, 0.2);
+            border: 1px solid #644096;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+            font-style: italic;
+            color: #b19cd9;
+        }
+        
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.2);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #9c88ff;
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #7c68df;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌙 The Endless Nights Engine - Database Inspector</h1>
+        <p class="subtitle">Where knowledge has weight and worlds degrade...</p>
+        
+        <div class="controls">
+            <button onclick="refreshData()">🔄 Refresh</button>
+            <button onclick="showFixtures()">📦 Load Fixtures</button>
+            <button onclick="exportCurrentWorld()">💾 Export World</button>
+            <button class="danger" onclick="confirmClearDatabase()">🗑️ Clear Database</button>
+        </div>
+        
+        <div class="stats-grid" id="stats">
+            <div class="stat-card">
+                <div class="stat-value">-</div>
+                <div class="stat-label">Worlds</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">-</div>
+                <div class="stat-label">Characters</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">-</div>
+                <div class="stat-label">Locations</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">-</div>
+                <div class="stat-label">Objects</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">-</div>
+                <div class="stat-label">Treaties</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">-</div>
+                <div class="stat-label">DB Size (MB)</div>
+            </div>
+        </div>
+        
+        <div class="dashboard">
+            <div class="sidebar">
+                <h3>Worlds</h3>
+                <div class="world-list" id="worldList">
+                    <div class="loading">Loading worlds...</div>
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <div id="worldDetails">
+                    <div class="loading">Select a world to inspect</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Fixtures Modal -->
+        <div id="fixturesModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); z-index: 1000;">
+            <div style="background: #1a1a2e; margin: 50px auto; max-width: 800px; padding: 30px; border-radius: 8px; border: 2px solid #9c88ff;">
+                <h2 style="margin-bottom: 20px;">Load Fixtures</h2>
+                <div id="fixturesList" class="fixture-list">
+                    <div class="loading">Loading fixtures...</div>
+                </div>
+                <div style="margin-top: 20px;">
+                    <label>
+                        <input type="checkbox" id="overwriteCheckbox"> Overwrite existing data
+                    </label>
+                </div>
+                <div style="margin-top: 20px;">
+                    <button onclick="closeFixtures()">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const API_BASE = 'http://localhost:8747/api';
+        let currentWorld = null;
+        let currentTab = 'characters';
+        
+        async function fetchAPI(endpoint, options = {}) {
+            try {
+                const response = await fetch(`${API_BASE}${endpoint}`, {
+                    ...options,
+                    headers: {
+                        'Content-Type': 'application/json',
+                        ...options.headers
+                    }
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                return await response.json();
+            } catch (error) {
+                console.error('API Error:', error);
+                throw error;
+            }
+        }
+        
+        async function loadStats() {
+            try {
+                const stats = await fetchAPI('/inspector/stats');
+                const statsContainer = document.getElementById('stats');
+                
+                statsContainer.innerHTML = `
+                    <div class="stat-card">
+                        <div class="stat-value">${stats.total_worlds}</div>
+                        <div class="stat-label">Worlds</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">${stats.total_characters}</div>
+                        <div class="stat-label">Characters</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">${stats.total_locations}</div>
+                        <div class="stat-label">Locations</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">${stats.total_objects}</div>
+                        <div class="stat-label">Objects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">${stats.total_treaties}</div>
+                        <div class="stat-label">Treaties</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">${stats.database_size_mb}</div>
+                        <div class="stat-label">DB Size (MB)</div>
+                    </div>
+                `;
+            } catch (error) {
+                console.error('Failed to load stats:', error);
+            }
+        }
+        
+        async function loadWorlds() {
+            try {
+                const worlds = await fetchAPI('/inspector/worlds');
+                const worldList = document.getElementById('worldList');
+                
+                if (worlds.length === 0) {
+                    worldList.innerHTML = '<div class="loading">No worlds found</div>';
+                    return;
+                }
+                
+                worldList.innerHTML = worlds.map(world => `
+                    <div class="world-item" onclick="selectWorld('${world.id}', this)">
+                        <div class="world-name">${world.name}</div>
+                        <div class="world-stats">
+                            👤 ${world.character_count} characters | 
+                            📍 ${world.location_count} locations | 
+                            📦 ${world.object_count} objects
+                        </div>
+                    </div>
+                `).join('');
+                
+                // Auto-select first world
+                if (worlds.length > 0 && !currentWorld) {
+                    const firstWorldElement = document.querySelector('.world-item');
+                    selectWorld(worlds[0].id, firstWorldElement);
+                }
+            } catch (error) {
+                console.error('Failed to load worlds:', error);
+                document.getElementById('worldList').innerHTML = '<div class="error">Failed to load worlds</div>';
+            }
+        }
+        
+        async function selectWorld(worldId, element) {
+            currentWorld = worldId;
+            
+            // Update selection UI
+            document.querySelectorAll('.world-item').forEach(item => {
+                item.classList.remove('selected');
+            });
+            if (element) {
+                element.classList.add('selected');
+            }
+            
+            // Load world details
+            await loadWorldDetails(worldId);
+        }
+        
+        async function loadWorldDetails(worldId) {
+            try {
+                const [world, characters, locations, objects] = await Promise.all([
+                    fetchAPI('/inspector/worlds').then(worlds => worlds.find(w => w.id === worldId)),
+                    fetchAPI(`/inspector/world/${worldId}/characters`),
+                    fetchAPI(`/inspector/world/${worldId}/locations`),
+                    fetchAPI(`/inspector/world/${worldId}/objects`)
+                ]);
+                
+                const detailsContainer = document.getElementById('worldDetails');
+                
+                detailsContainer.innerHTML = `
+                    <h2>${world.name}</h2>
+                    <p style="color: #888; margin-bottom: 15px;">${world.description}</p>
+                    
+                    ${world.hidden_truth ? `
+                        <div class="hidden-truth">
+                            <strong>Hidden Truth:</strong> ${world.hidden_truth}
+                        </div>
+                    ` : ''}
+                    
+                    <div class="tabs">
+                        <button class="tab ${currentTab === 'characters' ? 'active' : ''}" onclick="switchTab('characters')">
+                            Characters (${characters.length})
+                        </button>
+                        <button class="tab ${currentTab === 'locations' ? 'active' : ''}" onclick="switchTab('locations')">
+                            Locations (${locations.length})
+                        </button>
+                        <button class="tab ${currentTab === 'objects' ? 'active' : ''}" onclick="switchTab('objects')">
+                            Objects (${objects.length})
+                        </button>
+                    </div>
+                    
+                    <div id="tabContent">
+                        ${renderTabContent(currentTab, { characters, locations, objects })}
+                    </div>
+                `;
+            } catch (error) {
+                console.error('Failed to load world details:', error);
+                document.getElementById('worldDetails').innerHTML = '<div class="error">Failed to load world details</div>';
+            }
+        }
+        
+        function switchTab(tab) {
+            currentTab = tab;
+            if (currentWorld) {
+                loadWorldDetails(currentWorld);
+            }
+        }
+        
+        function renderTabContent(tab, data) {
+            switch(tab) {
+                case 'characters':
+                    return renderCharacters(data.characters);
+                case 'locations':
+                    return renderLocations(data.locations);
+                case 'objects':
+                    return renderObjects(data.objects);
+                default:
+                    return '';
+            }
+        }
+        
+        function renderCharacters(characters) {
+            if (characters.length === 0) {
+                return '<div class="loading">No characters found</div>';
+            }
+            
+            return `<div class="element-grid">
+                ${characters.map(char => `
+                    <div class="element-card">
+                        <div class="element-name">${char.name}</div>
+                        <div class="element-desc">${char.description}</div>
+                        <div class="element-stats">
+                            <span>Power: ${char.power_level}/10</span>
+                            <span>${char.is_witness_candidate ? '👁️ Witness' : ''}</span>
+                            <span>${char.alive ? '✅ Alive' : '💀 Dead'}</span>
+                        </div>
+                        <div class="degradation-bar">
+                            <div class="degradation-fill" style="width: ${char.memory_intact * 100}%"></div>
+                        </div>
+                        ${char.known_truths.length > 0 ? `
+                            <div style="margin-top: 10px; font-size: 11px; color: #888;">
+                                <strong>Known truths:</strong><br>
+                                ${char.known_truths.join('<br>')}
+                            </div>
+                        ` : ''}
+                    </div>
+                `).join('')}
+            </div>`;
+        }
+        
+        function renderLocations(locations) {
+            if (locations.length === 0) {
+                return '<div class="loading">No locations found</div>';
+            }
+            
+            return `<div class="element-grid">
+                ${locations.map(loc => `
+                    <div class="element-card">
+                        <div class="element-name">${loc.name}</div>
+                        <div class="element-desc">${loc.description}</div>
+                        <div class="element-stats">
+                            <span>Witnessed: ${loc.witness_count}x</span>
+                        </div>
+                        <div style="margin-top: 10px;">
+                            <div style="font-size: 11px; color: #666;">Integrity</div>
+                            <div class="degradation-bar">
+                                <div class="degradation-fill" style="width: ${loc.integrity * 100}%"></div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <div style="font-size: 11px; color: #666;">Color</div>
+                            <div class="degradation-bar">
+                                <div class="degradation-fill" style="width: ${loc.color_saturation * 100}%"></div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 5px;">
+                            <div style="font-size: 11px; color: #666;">Clarity</div>
+                            <div class="degradation-bar">
+                                <div class="degradation-fill" style="width: ${loc.clarity * 100}%"></div>
+                            </div>
+                        </div>
+                    </div>
+                `).join('')}
+            </div>`;
+        }
+        
+        function renderObjects(objects) {
+            if (objects.length === 0) {
+                return '<div class="loading">No objects found</div>';
+            }
+            
+            return `<div class="element-grid">
+                ${objects.map(obj => `
+                    <div class="element-card">
+                        <div class="element-name">${obj.name}</div>
+                        <div class="element-desc">${obj.description}</div>
+                        <div class="element-stats">
+                            <span>Weight: ${obj.weight}</span>
+                            <span>Type: ${obj.resource_type}</span>
+                        </div>
+                        <div class="degradation-bar">
+                            <div class="degradation-fill" style="width: ${obj.condition * 100}%"></div>
+                        </div>
+                    </div>
+                `).join('')}
+            </div>`;
+        }
+        
+        async function showFixtures() {
+            const modal = document.getElementById('fixturesModal');
+            modal.style.display = 'block';
+            
+            try {
+                const fixtures = await fetchAPI('/inspector/fixtures');
+                const fixturesList = document.getElementById('fixturesList');
+                
+                if (fixtures.length === 0) {
+                    fixturesList.innerHTML = '<div class="loading">No fixtures found</div>';
+                    return;
+                }
+                
+                fixturesList.innerHTML = fixtures.map(fixture => `
+                    <div class="fixture-item">
+                        <div class="fixture-info">
+                            <div class="fixture-name">${fixture.filename}</div>
+                            <div class="fixture-meta">
+                                ${fixture.element_count} elements | ${fixture.size_kb} KB | ${fixture.path}
+                            </div>
+                        </div>
+                        <button onclick="loadFixture('${fixture.path}')">Load</button>
+                    </div>
+                `).join('');
+            } catch (error) {
+                console.error('Failed to load fixtures:', error);
+            }
+        }
+        
+        function closeFixtures() {
+            document.getElementById('fixturesModal').style.display = 'none';
+        }
+        
+        async function loadFixture(fixturePath) {
+            const overwrite = document.getElementById('overwriteCheckbox').checked;
+            
+            if (overwrite && !confirm('This will delete all existing data. Are you sure?')) {
+                return;
+            }
+            
+            try {
+                const result = await fetchAPI('/inspector/load-fixture', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        fixture_path: fixturePath,
+                        overwrite: overwrite
+                    })
+                });
+                
+                if (result.success) {
+                    alert(`Success! Loaded ${result.loaded_count} elements.`);
+                    closeFixtures();
+                    refreshData();
+                } else {
+                    alert(`Failed: ${result.message}\n${result.errors.join('\n')}`);
+                }
+            } catch (error) {
+                alert(`Error loading fixture: ${error.message}`);
+            }
+        }
+        
+        async function exportCurrentWorld() {
+            if (!currentWorld) {
+                alert('Please select a world first');
+                return;
+            }
+            
+            try {
+                const result = await fetchAPI(`/inspector/export-world/${currentWorld}`, {
+                    method: 'POST'
+                });
+                
+                if (result.success) {
+                    alert(`Exported ${result.element_count} elements to ${result.filename}`);
+                } else {
+                    alert(`Export failed: ${result.error}`);
+                }
+            } catch (error) {
+                alert(`Error exporting world: ${error.message}`);
+            }
+        }
+        
+        async function confirmClearDatabase() {
+            if (!confirm('⚠️ This will DELETE ALL DATA in the database. Are you absolutely sure?')) {
+                return;
+            }
+            
+            if (!confirm('⚠️ FINAL WARNING: All worlds, characters, and game data will be permanently deleted. Continue?')) {
+                return;
+            }
+            
+            try {
+                const result = await fetchAPI('/inspector/clear-database', {
+                    method: 'DELETE'
+                });
+                
+                if (result.success) {
+                    alert('Database cleared successfully');
+                    refreshData();
+                } else {
+                    alert(`Failed to clear database: ${result.error}`);
+                }
+            } catch (error) {
+                alert(`Error clearing database: ${error.message}`);
+            }
+        }
+        
+        function refreshData() {
+            loadStats();
+            loadWorlds();
+            if (currentWorld) {
+                loadWorldDetails(currentWorld);
+            }
+        }
+        
+        // Initialize on load
+        window.addEventListener('DOMContentLoaded', () => {
+            refreshData();
+        });
+        
+        // Auto-refresh every 30 seconds
+        setInterval(refreshData, 30000);
+    </script>
+</body>
+</html>
