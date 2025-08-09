@@ -1,6 +1,9 @@
-# OnlyWorlds Tool Template
+# The Endless Nights Engine (Built on OnlyWorlds)
 
-A clean, minimal template for building tools that interact with the OnlyWorlds API. Perfect for beginners to get started with world-building data management.
+**Original Template**: OnlyWorlds Tool Template  
+**New Purpose**: A witness engine for exploring worlds where knowledge has weight
+
+> This project extends the OnlyWorlds template into a full game engine. See `README-ENGINE.md` for complete documentation.
 
 ## 🚀 Quick Start
 
