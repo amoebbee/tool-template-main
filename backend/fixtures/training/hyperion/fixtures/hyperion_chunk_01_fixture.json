@@ -1,0 +1,398 @@
+[
+  {
+    "model": "worlds.world",
+    "pk": "550e8400-e29b-41d4-a716-446655440002",
+    "fields": {
+      "name": "Hyperion Cantos",
+      "description": "A universe where the Hegemony of Man spans hundreds of worlds connected by farcasters, while the Time Tombs on Hyperion move backward through time bringing the Shrike.",
+      "hidden_truth": "The Core AIs manipulate humanity while the Shrike serves as both destroyer and savior across time.",
+      "witness_type": "consul",
+      "resource_types": {
+        "ephemeral": "fatline messages across the void",
+        "physical": "ancient Earth artifacts like the Steinway",
+        "binding": "diplomatic immunity and Hegemony authority"
+      },
+      "degradation_vector": "Time itself flows backward at the Tombs"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440111",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "The Hegemony Consul",
+      "description": "A diplomat on the edge of known space, playing ancient music while waiting for apocalyptic news. Last representative of human authority on Hyperion.",
+      "power_level": 6,
+      "agency": true,
+      "witness_candidate": true,
+      "current_location": "550e8400-e29b-41d4-a716-446655440211",
+      "physicality": "human diplomat in formal bearing",
+      "mentality": "melancholic, cultured, burdened by knowledge",
+      "origins": "Hegemony diplomatic corps",
+      "motivations": "maintain order as civilization collapses"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440112",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Meina Gladstone",
+      "description": "CEO of the Hegemony Senate, leader of hundreds of worlds, sender of fatline messages across the void.",
+      "power_level": 9,
+      "agency": true,
+      "witness_candidate": false,
+      "current_location": null,
+      "physicality": "commanding presence even in hologram",
+      "mentality": "strategic, desperate, making impossible choices",
+      "origins": "risen through Hegemony political ranks",
+      "motivations": "save humanity from the coming storm"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440211",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Ebony Spaceship",
+      "description": "The Consul's personal spacecraft, elegant and ancient, equipped with fatline receiver and housing a Steinway piano on its balcony.",
+      "size_scale": "medium",
+      "integrity": 0.9,
+      "witnessed_events": ["Reception of the fatline message", "Playing of Rachmaninoff"],
+      "function": "diplomatic vessel and residence",
+      "architecture": "spaceship with atmospheric balcony"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440212",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Hyperion",
+      "description": "A backwater planet at the edge of Hegemony space, home to the Time Tombs and the Shrike, where swamps teem with saurian life.",
+      "size_scale": "vast",
+      "integrity": 0.7,
+      "witnessed_events": ["The opening of the Time Tombs", "The Shrike pilgrimage"],
+      "function": "frontier world with temporal anomalies",
+      "architecture": "planet with swamps, forests, and mysterious structures"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440213",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Forest of Giants",
+      "description": "Massive gymnosperm forest on Hyperion where tesla trees grow hundreds of meters tall.",
+      "size_scale": "vast",
+      "integrity": 0.8,
+      "witnessed_events": ["Carrion-breed hunts"],
+      "function": "primeval forest ecosystem",
+      "architecture": "towering ancient trees"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440214",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Swamps Below",
+      "description": "Fetid swamplands beneath the Consul's ship where saurian creatures surge and bellow.",
+      "size_scale": "large",
+      "integrity": 0.6,
+      "witnessed_events": ["Saurian challenges", "Carrion feeding"],
+      "function": "dangerous wetland ecosystem",
+      "architecture": "murky swamps with prehistoric life"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440311",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Ancient Steinway Piano",
+      "description": "A well-maintained piano from Old Earth, centuries old, on which the Consul plays Rachmaninoff.",
+      "weight": 500,
+      "resource_type": "physical",
+      "significance": "Connection to lost Earth culture, comfort in dark times",
+      "owned_by": "550e8400-e29b-41d4-a716-446655440111",
+      "utility": "musical instrument",
+      "materials": "Earth wood and ivory"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440312",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Fatline Receiver",
+      "description": "Faster-than-light communication device that receives burst transmissions of decaying tachyons.",
+      "weight": 20,
+      "resource_type": "physical",
+      "significance": "Only link to the wider Hegemony from isolated Hyperion",
+      "owned_by": "550e8400-e29b-41d4-a716-446655440111",
+      "utility": "FTL communication",
+      "materials": "advanced technology"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440313",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Projection Pit",
+      "description": "Holographic display system with comfortable cushions for viewing messages.",
+      "weight": 50,
+      "resource_type": "physical",
+      "significance": "Interface for receiving critical communications",
+      "owned_by": "550e8400-e29b-41d4-a716-446655440111",
+      "utility": "holographic display",
+      "materials": "projectors and cushions"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440314",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Diskey",
+      "description": "Data storage and playback device that blinks green when ready.",
+      "weight": 1,
+      "resource_type": "physical",
+      "significance": "Contains the fatline message that changes everything",
+      "owned_by": "550e8400-e29b-41d4-a716-446655440111",
+      "utility": "data storage",
+      "materials": "quantum storage medium"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440315",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Glass of Scotch",
+      "description": "Ancient Earth whisky, likely one of the last bottles in this sector.",
+      "weight": 0.5,
+      "resource_type": "ephemeral",
+      "significance": "Small comfort before receiving terrible news",
+      "owned_by": "550e8400-e29b-41d4-a716-446655440111",
+      "utility": "alcoholic beverage",
+      "materials": "distilled spirits"
+    }
+  },
+  {
+    "model": "worlds.institution",
+    "pk": "550e8400-e29b-41d4-a716-446655440711",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "The Hegemony of Man",
+      "description": "Interstellar human government spanning hundreds of worlds connected by farcaster network.",
+      "function": "galactic governance",
+      "authority": "Senate and CEO",
+      "members": ["550e8400-e29b-41d4-a716-446655440111", "550e8400-e29b-41d4-a716-446655440112"],
+      "reputation": 75
+    }
+  },
+  {
+    "model": "worlds.title",
+    "pk": "550e8400-e29b-41d4-a716-446655440811",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Consul of the Hegemony",
+      "description": "Diplomatic representative with special authority on frontier worlds.",
+      "authority": "diplomatic immunity and negotiation rights",
+      "holders": ["550e8400-e29b-41d4-a716-446655440111"],
+      "institutions": ["550e8400-e29b-41d4-a716-446655440711"]
+    }
+  },
+  {
+    "model": "worlds.title",
+    "pk": "550e8400-e29b-41d4-a716-446655440812",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "CEO of the Senate",
+      "description": "Supreme executive of the Hegemony government.",
+      "authority": "command of all Hegemony forces and resources",
+      "holders": ["550e8400-e29b-41d4-a716-446655440112"],
+      "institutions": ["550e8400-e29b-41d4-a716-446655440711"]
+    }
+  },
+  {
+    "model": "worlds.species",
+    "pk": "550e8400-e29b-41d4-a716-446655440911",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Giant Gymnosperm",
+      "description": "Massive coniferous trees native to Hyperion, growing hundreds of meters tall.",
+      "classification": "Flora",
+      "characteristics": "enormous size, ancient growth",
+      "habitat": ["550e8400-e29b-41d4-a716-446655440213"]
+    }
+  },
+  {
+    "model": "worlds.species",
+    "pk": "550e8400-e29b-41d4-a716-446655440912",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Carrion-Breed Saurian",
+      "description": "Large reptilian scavengers that hunt in packs on Hyperion.",
+      "classification": "Fauna",
+      "characteristics": "pack hunters, mournful howls, carnivorous",
+      "habitat": ["550e8400-e29b-41d4-a716-446655440214", "550e8400-e29b-41d4-a716-446655440213"]
+    }
+  },
+  {
+    "model": "worlds.collective",
+    "pk": "550e8400-e29b-41d4-a716-446655440A11",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Carrion-Breed Pack",
+      "description": "Hunting pack of saurian scavengers that roam Hyperion's wilderness.",
+      "purpose": "cooperative hunting and survival",
+      "size": 12,
+      "members": [],
+      "location": "550e8400-e29b-41d4-a716-446655440214"
+    }
+  },
+  {
+    "model": "worlds.phenomenon",
+    "pk": "550e8400-e29b-41d4-a716-446655440B11",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Northern Thunderstorm",
+      "description": "Massive electrical storms that sweep across Hyperion's northern regions.",
+      "effects": "lightning, heavy rain, atmospheric disturbance",
+      "frequency": "seasonal",
+      "intensity": 75,
+      "locations": ["550e8400-e29b-41d4-a716-446655440212"]
+    }
+  },
+  {
+    "model": "worlds.phenomenon",
+    "pk": "550e8400-e29b-41d4-a716-446655440B12",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Decaying Tachyons",
+      "description": "Faster-than-light particles used for fatline communication that decay rapidly.",
+      "effects": "enable FTL communication across vast distances",
+      "frequency": "per transmission",
+      "intensity": 90,
+      "locations": []
+    }
+  },
+  {
+    "model": "worlds.construct",
+    "pk": "550e8400-e29b-41d4-a716-446655440C11",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Fatline System",
+      "description": "Faster-than-light communication network using tachyon bursts.",
+      "function": "interstellar communication",
+      "technology": "tachyon manipulation",
+      "creators": ["550e8400-e29b-41d4-a716-446655440711"],
+      "locations": []
+    }
+  },
+  {
+    "model": "worlds.construct",
+    "pk": "550e8400-e29b-41d4-a716-446655440C12",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Interdiction Field System",
+      "description": "Security system that prevents unauthorized access or departure.",
+      "function": "area denial and containment",
+      "technology": "field manipulation",
+      "creators": ["550e8400-e29b-41d4-a716-446655440711"],
+      "locations": ["550e8400-e29b-41d4-a716-446655440212"]
+    }
+  },
+  {
+    "model": "worlds.ability",
+    "pk": "550e8400-e29b-41d4-a716-446655440D11",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Piano Playing",
+      "description": "Skill in playing classical piano pieces from Old Earth.",
+      "type": "Musical",
+      "potency": 75,
+      "practitioners": ["550e8400-e29b-41d4-a716-446655440111"]
+    }
+  },
+  {
+    "model": "worlds.event",
+    "pk": "550e8400-e29b-41d4-a716-446655440E11",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Reception of the Fatline Message",
+      "description": "The Consul receives an urgent faster-than-light communication from Meina Gladstone.",
+      "participants": ["550e8400-e29b-41d4-a716-446655440111", "550e8400-e29b-41d4-a716-446655440112"],
+      "location": "550e8400-e29b-41d4-a716-446655440211",
+      "consequences": "Sets in motion the final pilgrimage to the Time Tombs",
+      "intensity": 85
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F11",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Consul Serves Hegemony",
+      "type": "service",
+      "actor": "550e8400-e29b-41d4-a716-446655440111",
+      "involves_characters": ["550e8400-e29b-41d4-a716-446655440111"],
+      "involves_locations": ["550e8400-e29b-41d4-a716-446655440212"],
+      "involves_objects": [],
+      "involves_events": [],
+      "intensity": 70,
+      "background": "Diplomatic assignment to backwater Hyperion"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F12",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Gladstone Commands Consul",
+      "type": "authority",
+      "actor": "550e8400-e29b-41d4-a716-446655440112",
+      "involves_characters": ["550e8400-e29b-41d4-a716-446655440112", "550e8400-e29b-41d4-a716-446655440111"],
+      "involves_locations": [],
+      "involves_objects": ["550e8400-e29b-41d4-a716-446655440312"],
+      "involves_events": ["550e8400-e29b-41d4-a716-446655440E11"],
+      "intensity": 85,
+      "background": "CEO has ultimate authority over diplomatic corps"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F13",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Consul Plays Ancient Music",
+      "type": "cultural",
+      "actor": "550e8400-e29b-41d4-a716-446655440111",
+      "involves_characters": ["550e8400-e29b-41d4-a716-446655440111"],
+      "involves_locations": ["550e8400-e29b-41d4-a716-446655440211"],
+      "involves_objects": ["550e8400-e29b-41d4-a716-446655440311"],
+      "involves_events": [],
+      "intensity": 60,
+      "background": "Maintaining connection to lost Earth culture"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F14",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Saurians Hunt Below",
+      "type": "predation",
+      "actor": "550e8400-e29b-41d4-a716-446655440A11",
+      "involves_characters": [],
+      "involves_locations": ["550e8400-e29b-41d4-a716-446655440214", "550e8400-e29b-41d4-a716-446655440213"],
+      "involves_objects": [],
+      "involves_events": [],
+      "intensity": 65,
+      "background": "Packs of carrion-breeds roam the swamps"
+    }
+  }
+]

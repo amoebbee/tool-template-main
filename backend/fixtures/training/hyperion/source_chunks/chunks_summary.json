@@ -1,0 +1,27 @@
+{
+  "source_file": "ow_parse_examples/hyperion.txt",
+  "total_lines": 1065,
+  "chunk_size": 500,
+  "overlap": 50,
+  "total_chunks": 3,
+  "chunks": [
+    {
+      "number": 1,
+      "start_line": 1,
+      "end_line": 500,
+      "line_count": 500
+    },
+    {
+      "number": 2,
+      "start_line": 451,
+      "end_line": 950,
+      "line_count": 500
+    },
+    {
+      "number": 3,
+      "start_line": 901,
+      "end_line": 1065,
+      "line_count": 165
+    }
+  ]
+}

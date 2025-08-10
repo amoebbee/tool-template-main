@@ -1,0 +1,372 @@
+[
+  {
+    "model": "worlds.world",
+    "pk": "550e8400-e29b-41d4-a716-446655440001",
+    "fields": {
+      "name": "Blood Meridian West",
+      "description": "A violent frontier where religious fraud meets true evil, witnessed by a pale child who carries no weapon in a land of endless violence.",
+      "hidden_truth": "All authority is performance, and the Judge is the ultimate performer who needs no costume but his terrible nakedness.",
+      "witness_type": "child",
+      "resource_types": {
+        "ephemeral": "words of dead poets",
+        "physical": "weapons not carried",
+        "binding": "warrants from four states"
+      },
+      "degradation_vector": "Truth dissolves pretense like acid"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440101",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "The Kid",
+      "description": "A pale, thin child who stokes scullery fires and rides unarmed through violent lands. The perfect witness - present but powerless.",
+      "power_level": 2,
+      "agency": false,
+      "witness_candidate": true,
+      "current_location": "550e8400-e29b-41d4-a716-446655440201",
+      "physicality": "pale and thin, wears a thin and ragged linen shirt",
+      "mentality": "silent observer, carries no weapons",
+      "origins": "son of a drunken schoolmaster who quotes dead poets",
+      "motivations": "survival through observation"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440102",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Judge Holden",
+      "description": "An enormous hairless man who enters tents and destroys faith with words. Serene and childlike in face, small in hands, infinite in malice.",
+      "power_level": 10,
+      "agency": true,
+      "witness_candidate": false,
+      "current_location": "550e8400-e29b-41d4-a716-446655440201",
+      "physicality": "enormous, bald as a stone, no trace of beard, no brows or lashes, small hands",
+      "mentality": "serene and strangely childlike face, speaks with terrible eloquence",
+      "origins": "unknown, appears like a force of nature",
+      "motivations": "exposure of all pretense, destruction of false piety"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440103",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Reverend Green",
+      "description": "A fraudulent minister playing to full houses during two weeks of rain, exposed as illiterate and wanted by the law.",
+      "power_level": 3,
+      "agency": true,
+      "witness_candidate": false,
+      "current_location": "550e8400-e29b-41d4-a716-446655440201",
+      "physicality": "standing at crateboard pulpit",
+      "mentality": "memorized passages to fake piety he despises",
+      "origins": "fugitive from Tennessee, Kentucky, Mississippi, and Arkansas",
+      "motivations": "profit from false ministry"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440104",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "The Kid's Father",
+      "description": "A schoolmaster who lies in drink and quotes from poets whose names are now lost.",
+      "power_level": 1,
+      "agency": false,
+      "witness_candidate": false,
+      "current_location": null,
+      "physicality": "lying in drink",
+      "mentality": "lost in alcohol and forgotten poetry",
+      "origins": "once a schoolmaster, now a drunk",
+      "motivations": "escape through drink and dead words"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440201",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "The Revival Tent",
+      "description": "A tent in Nacogdoches where the Reverend Green holds fraudulent revivals during two weeks of rain.",
+      "size_scale": "medium",
+      "integrity": 0.8,
+      "witnessed_events": ["The Judge's exposure of Reverend Green"],
+      "function": "religious gathering place",
+      "architecture": "temporary tent structure with crateboard pulpit"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440202",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Nacogdoches",
+      "description": "A town with hellholes where fraudulent revivals occur during endless rain.",
+      "size_scale": "large",
+      "integrity": 0.6,
+      "witnessed_events": ["Two weeks of rain", "Fraudulent revivals"],
+      "function": "frontier town",
+      "architecture": "town with various establishments including hellholes"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440203",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Republic of Fredonia",
+      "description": "A latterday republic through which the Kid rides toward Nacogdoches.",
+      "size_scale": "vast",
+      "integrity": 0.5,
+      "witnessed_events": ["The Kid's passage"],
+      "function": "political territory",
+      "architecture": "failed republic lands"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440204",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Dark Woods",
+      "description": "Darker woods beyond the fields that harbor yet a few last wolves.",
+      "size_scale": "large",
+      "integrity": 0.9,
+      "witnessed_events": ["Last wolves surviving"],
+      "function": "wilderness",
+      "architecture": "dense forest with predators"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440301",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "The Judge's Oilcloth Slicker",
+      "description": "An oilcloth slicker worn by Judge Holden, protection against two weeks of rain.",
+      "weight": 5,
+      "resource_type": "physical",
+      "significance": "Practical protection that makes the Judge's nakedness beneath more terrible",
+      "owned_by": "550e8400-e29b-41d4-a716-446655440102",
+      "utility": "weather protection",
+      "materials": "oilcloth"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440302",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "The Judge's Hat",
+      "description": "A hat removed upon entering the tent, adjusted before destroying the reverend.",
+      "weight": 2,
+      "resource_type": "physical",
+      "significance": "Symbol of false civility before unleashing truth",
+      "owned_by": "550e8400-e29b-41d4-a716-446655440102",
+      "utility": "head covering, social gesture"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440303",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "The Kid's Ragged Shirt",
+      "description": "A thin and ragged linen shirt worn by the pale child.",
+      "weight": 1,
+      "resource_type": "physical",
+      "significance": "Poverty and vulnerability made cloth",
+      "owned_by": "550e8400-e29b-41d4-a716-446655440101",
+      "utility": "minimal clothing",
+      "materials": "thin, ragged linen"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440304",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Papers of Divinity",
+      "description": "Documents the Reverend Green does not possess, proof of legitimate ministry.",
+      "weight": 10,
+      "resource_type": "binding",
+      "significance": "Absent authority that exposes the fraud",
+      "owned_by": null,
+      "utility": "religious legitimacy",
+      "materials": "non-existent papers"
+    }
+  },
+  {
+    "model": "worlds.event",
+    "pk": "550e8400-e29b-41d4-a716-446655440401",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "The Judge Exposes the Reverend",
+      "description": "Judge Holden enters the revival tent and systematically destroys Reverend Green's authority by revealing his illiteracy and criminal status.",
+      "participants": ["550e8400-e29b-41d4-a716-446655440102", "550e8400-e29b-41d4-a716-446655440103", "550e8400-e29b-41d4-a716-446655440101"],
+      "location": "550e8400-e29b-41d4-a716-446655440201",
+      "consequences": "Complete destruction of religious authority, congregation sees truth",
+      "intensity": 95
+    }
+  },
+  {
+    "model": "worlds.event",
+    "pk": "550e8400-e29b-41d4-a716-446655440402",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Two Weeks of Rain",
+      "description": "Continuous rain that drives people into the revival tent seeking meaning.",
+      "participants": [],
+      "location": "550e8400-e29b-41d4-a716-446655440202",
+      "consequences": "Full houses for fraudulent revivals",
+      "intensity": 60
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440501",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Judge Destroys Reverend's Authority",
+      "type": "conflict",
+      "actor": "550e8400-e29b-41d4-a716-446655440102",
+      "involves_characters": ["550e8400-e29b-41d4-a716-446655440102", "550e8400-e29b-41d4-a716-446655440103"],
+      "involves_locations": ["550e8400-e29b-41d4-a716-446655440201"],
+      "involves_objects": [],
+      "involves_events": ["550e8400-e29b-41d4-a716-446655440401"],
+      "intensity": 95,
+      "background": "The Judge enters and exposes the Reverend as illiterate fraud wanted by law"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440502",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "The Kid Witnesses the Exposure",
+      "type": "witnessed",
+      "actor": "550e8400-e29b-41d4-a716-446655440101",
+      "involves_characters": ["550e8400-e29b-41d4-a716-446655440101", "550e8400-e29b-41d4-a716-446655440102", "550e8400-e29b-41d4-a716-446655440103"],
+      "involves_locations": ["550e8400-e29b-41d4-a716-446655440201"],
+      "involves_objects": [],
+      "involves_events": ["550e8400-e29b-41d4-a716-446655440401"],
+      "intensity": 70,
+      "background": "The unarmed Kid stands at the back wall witnessing the destruction of false faith"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440503",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "The Congregation Falls Silent",
+      "type": "influence",
+      "actor": "550e8400-e29b-41d4-a716-446655440102",
+      "involves_characters": ["550e8400-e29b-41d4-a716-446655440102"],
+      "involves_locations": ["550e8400-e29b-41d4-a716-446655440201"],
+      "involves_objects": [],
+      "involves_events": ["550e8400-e29b-41d4-a716-446655440401"],
+      "intensity": 85,
+      "background": "The Judge's presence alone silences the entire tent"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440504",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Father's Drunken Poetry",
+      "type": "inheritance",
+      "actor": "550e8400-e29b-41d4-a716-446655440104",
+      "involves_characters": ["550e8400-e29b-41d4-a716-446655440104", "550e8400-e29b-41d4-a716-446655440101"],
+      "involves_locations": [],
+      "involves_objects": [],
+      "involves_events": [],
+      "intensity": 40,
+      "background": "The Kid inherits nothing but dead words from a drunken schoolmaster father"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440505",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Reverend Wanted by Law",
+      "type": "pursuit",
+      "actor": "550e8400-e29b-41d4-a716-446655440103",
+      "involves_characters": ["550e8400-e29b-41d4-a716-446655440103"],
+      "involves_locations": [],
+      "involves_objects": [],
+      "involves_events": [],
+      "intensity": 75,
+      "background": "Wanted in Tennessee, Kentucky, Mississippi, and Arkansas"
+    }
+  },
+  {
+    "model": "worlds.trait",
+    "pk": "550e8400-e29b-41d4-a716-446655440601",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Completely Hairless",
+      "description": "No hair, beard, eyebrows, or eyelashes - smooth as stone.",
+      "physical_effects": "Unsettling appearance, memorable presence",
+      "social_effects": "Inspires fear and fascination",
+      "significance": 95,
+      "bearers": ["550e8400-e29b-41d4-a716-446655440102"]
+    }
+  },
+  {
+    "model": "worlds.trait",
+    "pk": "550e8400-e29b-41d4-a716-446655440602",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Unarmed Observer",
+      "description": "Carries no weapons in a violent land.",
+      "physical_effects": "Vulnerable to violence",
+      "social_effects": "Marked as different, possibly weak or possibly above violence",
+      "significance": 80,
+      "bearers": ["550e8400-e29b-41d4-a716-446655440101"]
+    }
+  },
+  {
+    "model": "worlds.institution",
+    "pk": "550e8400-e29b-41d4-a716-446655440701",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "The Law",
+      "description": "Legal authority pursuing Reverend Green across four states.",
+      "function": "law enforcement",
+      "authority": "state governments",
+      "members": [],
+      "reputation": 60
+    }
+  },
+  {
+    "model": "worlds.collective",
+    "pk": "550e8400-e29b-41d4-a716-446655440801",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "The Congregation",
+      "description": "People seeking meaning in rain-soaked Nacogdoches, drawn to false revival.",
+      "purpose": "religious gathering",
+      "size": 50,
+      "members": ["550e8400-e29b-41d4-a716-446655440101"],
+      "location": "550e8400-e29b-41d4-a716-446655440201"
+    }
+  },
+  {
+    "model": "worlds.phenomenon",
+    "pk": "550e8400-e29b-41d4-a716-446655440901",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "The Endless Rain",
+      "description": "Two weeks of continuous rain driving people to seek false comfort.",
+      "effects": "Drives people indoors, creates atmosphere of desperation",
+      "frequency": "continuous for two weeks",
+      "intensity": 70,
+      "locations": ["550e8400-e29b-41d4-a716-446655440202"]
+    }
+  }
+]

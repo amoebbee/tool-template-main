@@ -1,0 +1,187 @@
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #fbbf24; line-height: 1.6;">
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">business</span><strong><a href="/docs/specification/element_categories/institution">Institution</a></strong> 'British Empire'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Sovereignty - Imperial</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">business</span><strong><a href="/docs/specification/element_categories/institution">Institution</a></strong> 'Spanish Empire'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Sovereignty - Imperial</span>
+</div>
+
+<div style="margin-bottom: 0;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">saved_search</span><strong><a href="/docs/specification/element_categories/event">Event</a></strong> 'British War Mobilization'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Military - Buildup</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</details>
+
+<details>
+<summary style="cursor: pointer; font-weight: bold; margin: 20px 0;">George Anson</summary>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #4a5568; line-height: 1.8;">
+
+And in a move that had suddenly raised Cheap's prospects, the captain under whom he served on the Centurion, <strong>George Anson</strong>, had been plucked by the <strong>Admiralty</strong> to be a <strong>commodore</strong> and lead the squadron of five warships against the Spanish.
+
+</div>
+</div>
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #fbbf24; line-height: 1.6;">
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">saved_search</span><strong><a href="/docs/specification/element_categories/event">Event</a></strong> 'Anson's Promotion'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Professional - Promotion</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">person_4</span><strong><a href="/docs/specification/element_categories/character">Character</a></strong> 'George Anson'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Human - Leader</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">business</span><strong><a href="/docs/specification/element_categories/institution">Institution</a></strong> 'Admiralty'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Division - Strategic</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'British Commodore'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Title - Leadership</span>
+</div>
+
+<div style="margin-bottom: 0;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">military_tech</span><strong><a href="/docs/specification/element_categories/title">Title</a></strong> 'Commodore'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Leadership - Commanding</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #4a5568; line-height: 1.8;">
+
+The promotion was unexpected. As the son of an obscure country squire, Anson did not wield the level of <strong>patronage</strong>, the grease—or "interest," as it was more politely called—that propelled many officers up the pole, along with their men.
+
+</div>
+</div>
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #fbbf24; line-height: 1.6;">
+
+<div style="margin-bottom: 0;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Patronage'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Situation - Acquisition</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #4a5568; line-height: 1.8;">
+
+Anson, then forty-two, had joined the Navy at the age of fourteen, and served for nearly three decades without leading a major <strong>military campaign</strong> or snaring a <strong>lucrative prize</strong>.
+
+</div>
+</div>
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #fbbf24; line-height: 1.6;">
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Anson's Career'<br>
+<span style="color: #a0aec0; margin-left: 40px;">History - Professional</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Military Campaign Leadership'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Occupation - Military</span>
+</div>
+
+<div style="margin-bottom: 0;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Prize Capture'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Situation - Acquisition</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #4a5568; line-height: 1.8;">
+
+Tall, with a long face and a high forehead, he had a <strong>remoteness</strong> about him. His <strong>blue eyes were inscrutable</strong>, and outside the company of a few trusted friends he <strong>rarely opened his mouth</strong>.
+
+</div>
+</div>
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #fbbf24; line-height: 1.6;">
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">flaky</span><strong><a href="/docs/specification/element_categories/trait">Trait</a></strong> 'Remoteness'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Temperament</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">flaky</span><strong><a href="/docs/specification/element_categories/trait">Trait</a></strong> 'Inscrutable Blue Eyes'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Physical</span>
+</div>
+
+<div style="margin-bottom: 0;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">flaky</span><strong><a href="/docs/specification/element_categories/trait">Trait</a></strong> 'Usually Silent'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Social</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #4a5568; line-height: 1.8;">
+
+One statesman, after meeting with him, noted, "Anson, as usual, said little." Anson corresponded even more sparingly, as if he doubted the ability of words to convey what he saw or felt. "He loved reading little, and writing, or dictating his own letters less, and that seeming negligence…drew upon him the ill will of many," a relative wrote. A diplomat later quipped that Anson was so unknowing about the world that he'd been "round it, but never in it."
+
+</div>
+</div>
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #fbbf24; line-height: 1.6;">
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">flaky</span><strong><a href="/docs/specification/element_categories/trait">Trait</a></strong> 'Withdrawn'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Temperament</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">saved_search</span><strong><a href="/docs/specification/element_categories/event">Event</a></strong> 'Comment On Anson'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Situation - Social</span>
+</div>
+
+<div style="margin-bottom: 0;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Anson Being Aggravating'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Situation - Social</span>
+</div>

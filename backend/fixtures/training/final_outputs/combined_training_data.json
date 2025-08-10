@@ -1,0 +1,2212 @@
+[
+  {
+    "model": "worlds.world",
+    "pk": "550e8400-e29b-41d4-a716-446655440001",
+    "fields": {
+      "name": "Blood Meridian West",
+      "description": "A violent frontier where religious fraud meets true evil, witnessed by a pale child who carries no weapon in a land of endless violence.",
+      "hidden_truth": "All authority is performance, and the Judge is the ultimate performer who needs no costume but his terrible nakedness.",
+      "witness_type": "child",
+      "resource_types": {
+        "ephemeral": "words of dead poets",
+        "physical": "weapons not carried",
+        "binding": "warrants from four states" // dont add random types and enums like this
+      },
+      "degradation_vector": "Truth dissolves pretense like acid" // doesnt exist.. 
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440101",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "The Kid",
+      "description": "A pale, thin child who stokes scullery fires and rides unarmed through violent lands. The perfect witness - present but powerless.", // DONT add madeupstuff liek this. ONLY put in what is found in the text. NEVER MAKE UP CONTENT OR GIVE OPINION
+      "power_level": 2,
+      "agency": false,
+      "witness_candidate": true,
+      "current_location": "550e8400-e29b-41d4-a716-446655440201",
+      "physicality": "pale and thin, wears a thin and ragged linen shirt",
+      "mentality": "silent observer, carries no weapons",
+      "origins": "son of a drunken schoolmaster who quotes dead poets",
+      "motivations": "survival through observation"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440102",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Judge Holden",
+      "description": "An enormous hairless man who enters tents and destroys faith with words. Serene and childlike in face, small in hands, infinite in malice.",
+      "power_level": 10,
+      "agency": true,
+      "witness_candidate": false,
+      "current_location": "550e8400-e29b-41d4-a716-446655440201",
+      "physicality": "enormous, bald as a stone, no trace of beard, no brows or lashes, small hands",
+      "mentality": "serene and strangely childlike face, speaks with terrible eloquence",
+      "origins": "unknown, appears like a force of nature",
+      "motivations": "exposure of all pretense, destruction of false piety" // this is bordelrine. we dont necessarily kon wthis from the tex.t never guess or fill in, only parse what is there. 
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440103",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Reverend Green",
+      "description": "A fraudulent minister playing to full houses during two weeks of rain, exposed as illiterate and wanted by the law.",
+      "power_level": 3,
+      "agency": true,
+      "witness_candidate": false,
+      "current_location": "550e8400-e29b-41d4-a716-446655440201",
+      "physicality": "standing at crateboard pulpit",
+      "mentality": "memorized passages to fake piety he despises",
+      "origins": "fugitive from Tennessee, Kentucky, Mississippi, and Arkansas",
+      "motivations": "profit from false ministry"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440104",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "The Kid's Father",
+      "description": "A schoolmaster who lies in drink and quotes from poets whose names are now lost.",
+      "power_level": 1,
+      "agency": false,
+      "witness_candidate": false,
+      "current_location": null,
+      "physicality": "lying in drink",
+      "mentality": "lost in alcohol and forgotten poetry",
+      "origins": "once a schoolmaster, now a drunk",
+      "motivations": "escape through drink and dead words"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440201",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "The Revival Tent",
+      "description": "A tent in Nacogdoches where the Reverend Green holds fraudulent revivals during two weeks of rain.",
+      "size_scale": "medium",
+      "integrity": 0.8,
+      "witnessed_events": [
+        "The Judge's exposure of Reverend Green"
+      ],
+      "function": "religious gathering place",
+      "architecture": "temporary tent structure with crateboard pulpit"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440202",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Nacogdoches",
+      "description": "A town with hellholes where fraudulent revivals occur during endless rain.",
+      "size_scale": "large",
+      "integrity": 0.6,
+      "witnessed_events": [
+        "Two weeks of rain",
+        "Fraudulent revivals"
+      ],
+      "function": "frontier town",
+      "architecture": "town with various establishments including hellholes"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440203",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Republic of Fredonia",
+      "description": "A latterday republic through which the Kid rides toward Nacogdoches.",
+      "size_scale": "vast",
+      "integrity": 0.5,
+      "witnessed_events": [
+        "The Kid's passage"
+      ],
+      "function": "political territory",
+      "architecture": "failed republic lands"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440204",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Dark Woods",
+      "description": "Darker woods beyond the fields that harbor yet a few last wolves.",
+      "size_scale": "large",
+      "integrity": 0.9,
+      "witnessed_events": [
+        "Last wolves surviving"
+      ],
+      "function": "wilderness",
+      "architecture": "dense forest with predators"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440301",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "The Judge's Oilcloth Slicker",
+      "description": "An oilcloth slicker worn by Judge Holden, protection against two weeks of rain.",
+      "weight": 5,
+      "resource_type": "physical",
+      "significance": "Practical protection that makes the Judge's nakedness beneath more terrible",
+      "owned_by": "550e8400-e29b-41d4-a716-446655440102",
+      "utility": "weather protection",
+      "materials": "oilcloth"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440302",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "The Judge's Hat",
+      "description": "A hat removed upon entering the tent, adjusted before destroying the reverend.",
+      "weight": 2,
+      "resource_type": "physical",
+      "significance": "Symbol of false civility before unleashing truth",
+      "owned_by": "550e8400-e29b-41d4-a716-446655440102",
+      "utility": "head covering, social gesture"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440303",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "The Kid's Ragged Shirt",
+      "description": "A thin and ragged linen shirt worn by the pale child.",
+      "weight": 1,
+      "resource_type": "physical",
+      "significance": "Poverty and vulnerability made cloth",
+      "owned_by": "550e8400-e29b-41d4-a716-446655440101",
+      "utility": "minimal clothing",
+      "materials": "thin, ragged linen"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440304",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Papers of Divinity",
+      "description": "Documents the Reverend Green does not possess, proof of legitimate ministry.",
+      "weight": 10,
+      "resource_type": "binding",
+      "significance": "Absent authority that exposes the fraud",
+      "owned_by": null,
+      "utility": "religious legitimacy",
+      "materials": "non-existent papers"
+    }
+  },
+  {
+    "model": "worlds.event",
+    "pk": "550e8400-e29b-41d4-a716-446655440401",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "The Judge Exposes the Reverend",
+      "description": "Judge Holden enters the revival tent and systematically destroys Reverend Green's authority by revealing his illiteracy and criminal status.",
+      "participants": [
+        "550e8400-e29b-41d4-a716-446655440102",
+        "550e8400-e29b-41d4-a716-446655440103",
+        "550e8400-e29b-41d4-a716-446655440101"
+      ],
+      "location": "550e8400-e29b-41d4-a716-446655440201",
+      "consequences": "Complete destruction of religious authority, congregation sees truth",
+      "intensity": 95
+    }
+  },
+  {
+    "model": "worlds.event",
+    "pk": "550e8400-e29b-41d4-a716-446655440402",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Two Weeks of Rain",
+      "description": "Continuous rain that drives people into the revival tent seeking meaning.",
+      "participants": [],
+      "location": "550e8400-e29b-41d4-a716-446655440202",
+      "consequences": "Full houses for fraudulent revivals",
+      "intensity": 60
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440501",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Judge Destroys Reverend's Authority",
+      "type": "conflict",
+      "actor": "550e8400-e29b-41d4-a716-446655440102",
+      "involves_characters": [
+        "550e8400-e29b-41d4-a716-446655440102",
+        "550e8400-e29b-41d4-a716-446655440103"
+      ],
+      "involves_locations": [
+        "550e8400-e29b-41d4-a716-446655440201"
+      ],
+      "involves_objects": [],
+      "involves_events": [
+        "550e8400-e29b-41d4-a716-446655440401"
+      ],
+      "intensity": 95,
+      "background": "The Judge enters and exposes the Reverend as illiterate fraud wanted by law"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440502",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "The Kid Witnesses the Exposure",
+      "type": "witnessed",
+      "actor": "550e8400-e29b-41d4-a716-446655440101",
+      "involves_characters": [
+        "550e8400-e29b-41d4-a716-446655440101",
+        "550e8400-e29b-41d4-a716-446655440102",
+        "550e8400-e29b-41d4-a716-446655440103"
+      ],
+      "involves_locations": [
+        "550e8400-e29b-41d4-a716-446655440201"
+      ],
+      "involves_objects": [],
+      "involves_events": [
+        "550e8400-e29b-41d4-a716-446655440401"
+      ],
+      "intensity": 70,
+      "background": "The unarmed Kid stands at the back wall witnessing the destruction of false faith"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440503",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "The Congregation Falls Silent",
+      "type": "influence",
+      "actor": "550e8400-e29b-41d4-a716-446655440102",
+      "involves_characters": [
+        "550e8400-e29b-41d4-a716-446655440102"
+      ],
+      "involves_locations": [
+        "550e8400-e29b-41d4-a716-446655440201"
+      ],
+      "involves_objects": [],
+      "involves_events": [
+        "550e8400-e29b-41d4-a716-446655440401"
+      ],
+      "intensity": 85,
+      "background": "The Judge's presence alone silences the entire tent"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440504",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Father's Drunken Poetry",
+      "type": "inheritance",
+      "actor": "550e8400-e29b-41d4-a716-446655440104",
+      "involves_characters": [
+        "550e8400-e29b-41d4-a716-446655440104",
+        "550e8400-e29b-41d4-a716-446655440101"
+      ],
+      "involves_locations": [],
+      "involves_objects": [],
+      "involves_events": [],
+      "intensity": 40,
+      "background": "The Kid inherits nothing but dead words from a drunken schoolmaster father"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440505",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Reverend Wanted by Law",
+      "type": "pursuit",
+      "actor": "550e8400-e29b-41d4-a716-446655440103",
+      "involves_characters": [
+        "550e8400-e29b-41d4-a716-446655440103"
+      ],
+      "involves_locations": [],
+      "involves_objects": [],
+      "involves_events": [],
+      "intensity": 75,
+      "background": "Wanted in Tennessee, Kentucky, Mississippi, and Arkansas"
+    }
+  },
+  {
+    "model": "worlds.trait",
+    "pk": "550e8400-e29b-41d4-a716-446655440601",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Completely Hairless",
+      "description": "No hair, beard, eyebrows, or eyelashes - smooth as stone.",
+      "physical_effects": "Unsettling appearance, memorable presence",
+      "social_effects": "Inspires fear and fascination",
+      "significance": 95,
+      "bearers": [
+        "550e8400-e29b-41d4-a716-446655440102"
+      ]
+    }
+  },
+  {
+    "model": "worlds.trait",
+    "pk": "550e8400-e29b-41d4-a716-446655440602",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "Unarmed Observer",
+      "description": "Carries no weapons in a violent land.",
+      "physical_effects": "Vulnerable to violence",
+      "social_effects": "Marked as different, possibly weak or possibly above violence",
+      "significance": 80,
+      "bearers": [
+        "550e8400-e29b-41d4-a716-446655440101"
+      ]
+    }
+  },
+  {
+    "model": "worlds.institution",
+    "pk": "550e8400-e29b-41d4-a716-446655440701",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "The Law",
+      "description": "Legal authority pursuing Reverend Green across four states.",
+      "function": "law enforcement",
+      "authority": "state governments",
+      "members": [],
+      "reputation": 60
+    }
+  },
+  {
+    "model": "worlds.collective",
+    "pk": "550e8400-e29b-41d4-a716-446655440801",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "The Congregation",
+      "description": "People seeking meaning in rain-soaked Nacogdoches, drawn to false revival.",
+      "purpose": "religious gathering",
+      "size": 50,
+      "members": [
+        "550e8400-e29b-41d4-a716-446655440101"
+      ],
+      "location": "550e8400-e29b-41d4-a716-446655440201"
+    }
+  },
+  {
+    "model": "worlds.phenomenon",
+    "pk": "550e8400-e29b-41d4-a716-446655440901",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440001",
+      "name": "The Endless Rain",
+      "description": "Two weeks of continuous rain driving people to seek false comfort.",
+      "effects": "Drives people indoors, creates atmosphere of desperation",
+      "frequency": "continuous for two weeks",
+      "intensity": 70,
+      "locations": [
+        "550e8400-e29b-41d4-a716-446655440202"
+      ]
+    }
+  },
+  {
+    "model": "worlds.world",
+    "pk": "550e8400-e29b-41d4-a716-446655440002",
+    "fields": {
+      "name": "Hyperion Cantos",
+      "description": "A universe where the Hegemony of Man spans hundreds of worlds connected by farcasters, while the Time Tombs on Hyperion move backward through time bringing the Shrike.",
+      "hidden_truth": "The Core AIs manipulate humanity while the Shrike serves as both destroyer and savior across time.",
+      "witness_type": "consul",
+      "resource_types": {
+        "ephemeral": "fatline messages across the void",
+        "physical": "ancient Earth artifacts like the Steinway",
+        "binding": "diplomatic immunity and Hegemony authority"
+      },
+      "degradation_vector": "Time itself flows backward at the Tombs"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440111",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "The Hegemony Consul",
+      "description": "A diplomat on the edge of known space, playing ancient music while waiting for apocalyptic news. Last representative of human authority on Hyperion.",
+      "power_level": 6,
+      "agency": true,
+      "witness_candidate": true,
+      "current_location": "550e8400-e29b-41d4-a716-446655440211",
+      "physicality": "human diplomat in formal bearing",
+      "mentality": "melancholic, cultured, burdened by knowledge",
+      "origins": "Hegemony diplomatic corps",
+      "motivations": "maintain order as civilization collapses"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440112",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Meina Gladstone",
+      "description": "CEO of the Hegemony Senate, leader of hundreds of worlds, sender of fatline messages across the void.",
+      "power_level": 9,
+      "agency": true,
+      "witness_candidate": false,
+      "current_location": null,
+      "physicality": "commanding presence even in hologram",
+      "mentality": "strategic, desperate, making impossible choices",
+      "origins": "risen through Hegemony political ranks",
+      "motivations": "save humanity from the coming storm"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440211",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Ebony Spaceship",
+      "description": "The Consul's personal spacecraft, elegant and ancient, equipped with fatline receiver and housing a Steinway piano on its balcony.",
+      "size_scale": "medium",
+      "integrity": 0.9,
+      "witnessed_events": [
+        "Reception of the fatline message",
+        "Playing of Rachmaninoff"
+      ],
+      "function": "diplomatic vessel and residence",
+      "architecture": "spaceship with atmospheric balcony"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440212",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Hyperion",
+      "description": "A backwater planet at the edge of Hegemony space, home to the Time Tombs and the Shrike, where swamps teem with saurian life.",
+      "size_scale": "vast",
+      "integrity": 0.7,
+      "witnessed_events": [
+        "The opening of the Time Tombs",
+        "The Shrike pilgrimage"
+      ],
+      "function": "frontier world with temporal anomalies",
+      "architecture": "planet with swamps, forests, and mysterious structures"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440213",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Forest of Giants",
+      "description": "Massive gymnosperm forest on Hyperion where tesla trees grow hundreds of meters tall.",
+      "size_scale": "vast",
+      "integrity": 0.8,
+      "witnessed_events": [
+        "Carrion-breed hunts"
+      ],
+      "function": "primeval forest ecosystem",
+      "architecture": "towering ancient trees"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440214",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Swamps Below",
+      "description": "Fetid swamplands beneath the Consul's ship where saurian creatures surge and bellow.",
+      "size_scale": "large",
+      "integrity": 0.6,
+      "witnessed_events": [
+        "Saurian challenges",
+        "Carrion feeding"
+      ],
+      "function": "dangerous wetland ecosystem",
+      "architecture": "murky swamps with prehistoric life"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440311",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Ancient Steinway Piano",
+      "description": "A well-maintained piano from Old Earth, centuries old, on which the Consul plays Rachmaninoff.",
+      "weight": 500,
+      "resource_type": "physical",
+      "significance": "Connection to lost Earth culture, comfort in dark times",
+      "owned_by": "550e8400-e29b-41d4-a716-446655440111",
+      "utility": "musical instrument",
+      "materials": "Earth wood and ivory"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440312",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Fatline Receiver",
+      "description": "Faster-than-light communication device that receives burst transmissions of decaying tachyons.",
+      "weight": 20,
+      "resource_type": "physical",
+      "significance": "Only link to the wider Hegemony from isolated Hyperion",
+      "owned_by": "550e8400-e29b-41d4-a716-446655440111",
+      "utility": "FTL communication",
+      "materials": "advanced technology"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440313",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Projection Pit",
+      "description": "Holographic display system with comfortable cushions for viewing messages.",
+      "weight": 50,
+      "resource_type": "physical",
+      "significance": "Interface for receiving critical communications",
+      "owned_by": "550e8400-e29b-41d4-a716-446655440111",
+      "utility": "holographic display",
+      "materials": "projectors and cushions"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440314",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Diskey",
+      "description": "Data storage and playback device that blinks green when ready.",
+      "weight": 1,
+      "resource_type": "physical",
+      "significance": "Contains the fatline message that changes everything",
+      "owned_by": "550e8400-e29b-41d4-a716-446655440111",
+      "utility": "data storage",
+      "materials": "quantum storage medium"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440315",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Glass of Scotch",
+      "description": "Ancient Earth whisky, likely one of the last bottles in this sector.",
+      "weight": 0.5,
+      "resource_type": "ephemeral",
+      "significance": "Small comfort before receiving terrible news",
+      "owned_by": "550e8400-e29b-41d4-a716-446655440111",
+      "utility": "alcoholic beverage",
+      "materials": "distilled spirits"
+    }
+  },
+  {
+    "model": "worlds.institution",
+    "pk": "550e8400-e29b-41d4-a716-446655440711",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "The Hegemony of Man",
+      "description": "Interstellar human government spanning hundreds of worlds connected by farcaster network.",
+      "function": "galactic governance",
+      "authority": "Senate and CEO",
+      "members": [
+        "550e8400-e29b-41d4-a716-446655440111",
+        "550e8400-e29b-41d4-a716-446655440112"
+      ],
+      "reputation": 75
+    }
+  },
+  {
+    "model": "worlds.title",
+    "pk": "550e8400-e29b-41d4-a716-446655440811",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Consul of the Hegemony",
+      "description": "Diplomatic representative with special authority on frontier worlds.",
+      "authority": "diplomatic immunity and negotiation rights",
+      "holders": [
+        "550e8400-e29b-41d4-a716-446655440111"
+      ],
+      "institutions": [
+        "550e8400-e29b-41d4-a716-446655440711"
+      ]
+    }
+  },
+  {
+    "model": "worlds.title",
+    "pk": "550e8400-e29b-41d4-a716-446655440812",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "CEO of the Senate",
+      "description": "Supreme executive of the Hegemony government.",
+      "authority": "command of all Hegemony forces and resources",
+      "holders": [
+        "550e8400-e29b-41d4-a716-446655440112"
+      ],
+      "institutions": [
+        "550e8400-e29b-41d4-a716-446655440711"
+      ]
+    }
+  },
+  {
+    "model": "worlds.species",
+    "pk": "550e8400-e29b-41d4-a716-446655440911",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Giant Gymnosperm",
+      "description": "Massive coniferous trees native to Hyperion, growing hundreds of meters tall.",
+      "classification": "Flora",
+      "characteristics": "enormous size, ancient growth",
+      "habitat": [
+        "550e8400-e29b-41d4-a716-446655440213"
+      ]
+    }
+  },
+  {
+    "model": "worlds.species",
+    "pk": "550e8400-e29b-41d4-a716-446655440912",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Carrion-Breed Saurian",
+      "description": "Large reptilian scavengers that hunt in packs on Hyperion.",
+      "classification": "Fauna",
+      "characteristics": "pack hunters, mournful howls, carnivorous",
+      "habitat": [
+        "550e8400-e29b-41d4-a716-446655440214",
+        "550e8400-e29b-41d4-a716-446655440213"
+      ]
+    }
+  },
+  {
+    "model": "worlds.collective",
+    "pk": "550e8400-e29b-41d4-a716-446655440A11",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Carrion-Breed Pack",
+      "description": "Hunting pack of saurian scavengers that roam Hyperion's wilderness.",
+      "purpose": "cooperative hunting and survival",
+      "size": 12,
+      "members": [],
+      "location": "550e8400-e29b-41d4-a716-446655440214"
+    }
+  },
+  {
+    "model": "worlds.phenomenon",
+    "pk": "550e8400-e29b-41d4-a716-446655440B11",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Northern Thunderstorm",
+      "description": "Massive electrical storms that sweep across Hyperion's northern regions.",
+      "effects": "lightning, heavy rain, atmospheric disturbance",
+      "frequency": "seasonal",
+      "intensity": 75,
+      "locations": [
+        "550e8400-e29b-41d4-a716-446655440212"
+      ]
+    }
+  },
+  {
+    "model": "worlds.phenomenon",
+    "pk": "550e8400-e29b-41d4-a716-446655440B12",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Decaying Tachyons",
+      "description": "Faster-than-light particles used for fatline communication that decay rapidly.",
+      "effects": "enable FTL communication across vast distances",
+      "frequency": "per transmission",
+      "intensity": 90,
+      "locations": []
+    }
+  },
+  {
+    "model": "worlds.construct",
+    "pk": "550e8400-e29b-41d4-a716-446655440C11",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Fatline System",
+      "description": "Faster-than-light communication network using tachyon bursts.",
+      "function": "interstellar communication",
+      "technology": "tachyon manipulation",
+      "creators": [
+        "550e8400-e29b-41d4-a716-446655440711"
+      ],
+      "locations": []
+    }
+  },
+  {
+    "model": "worlds.construct",
+    "pk": "550e8400-e29b-41d4-a716-446655440C12",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Interdiction Field System",
+      "description": "Security system that prevents unauthorized access or departure.",
+      "function": "area denial and containment",
+      "technology": "field manipulation",
+      "creators": [
+        "550e8400-e29b-41d4-a716-446655440711"
+      ],
+      "locations": [
+        "550e8400-e29b-41d4-a716-446655440212"
+      ]
+    }
+  },
+  {
+    "model": "worlds.ability",
+    "pk": "550e8400-e29b-41d4-a716-446655440D11",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Piano Playing",
+      "description": "Skill in playing classical piano pieces from Old Earth.",
+      "type": "Musical",
+      "potency": 75,
+      "practitioners": [
+        "550e8400-e29b-41d4-a716-446655440111"
+      ]
+    }
+  },
+  {
+    "model": "worlds.event",
+    "pk": "550e8400-e29b-41d4-a716-446655440E11",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Reception of the Fatline Message",
+      "description": "The Consul receives an urgent faster-than-light communication from Meina Gladstone.",
+      "participants": [
+        "550e8400-e29b-41d4-a716-446655440111",
+        "550e8400-e29b-41d4-a716-446655440112"
+      ],
+      "location": "550e8400-e29b-41d4-a716-446655440211",
+      "consequences": "Sets in motion the final pilgrimage to the Time Tombs",
+      "intensity": 85
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F11",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Consul Serves Hegemony",
+      "type": "service",
+      "actor": "550e8400-e29b-41d4-a716-446655440111",
+      "involves_characters": [
+        "550e8400-e29b-41d4-a716-446655440111"
+      ],
+      "involves_locations": [
+        "550e8400-e29b-41d4-a716-446655440212"
+      ],
+      "involves_objects": [],
+      "involves_events": [],
+      "intensity": 70,
+      "background": "Diplomatic assignment to backwater Hyperion"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F12",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Gladstone Commands Consul",
+      "type": "authority",
+      "actor": "550e8400-e29b-41d4-a716-446655440112",
+      "involves_characters": [
+        "550e8400-e29b-41d4-a716-446655440112",
+        "550e8400-e29b-41d4-a716-446655440111"
+      ],
+      "involves_locations": [],
+      "involves_objects": [
+        "550e8400-e29b-41d4-a716-446655440312"
+      ],
+      "involves_events": [
+        "550e8400-e29b-41d4-a716-446655440E11"
+      ],
+      "intensity": 85,
+      "background": "CEO has ultimate authority over diplomatic corps"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F13",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Consul Plays Ancient Music",
+      "type": "cultural",
+      "actor": "550e8400-e29b-41d4-a716-446655440111",
+      "involves_characters": [
+        "550e8400-e29b-41d4-a716-446655440111"
+      ],
+      "involves_locations": [
+        "550e8400-e29b-41d4-a716-446655440211"
+      ],
+      "involves_objects": [
+        "550e8400-e29b-41d4-a716-446655440311"
+      ],
+      "involves_events": [],
+      "intensity": 60,
+      "background": "Maintaining connection to lost Earth culture"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F14",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Saurians Hunt Below",
+      "type": "predation",
+      "actor": "550e8400-e29b-41d4-a716-446655440A11",
+      "involves_characters": [],
+      "involves_locations": [
+        "550e8400-e29b-41d4-a716-446655440214",
+        "550e8400-e29b-41d4-a716-446655440213"
+      ],
+      "involves_objects": [],
+      "involves_events": [],
+      "intensity": 65,
+      "background": "Packs of carrion-breeds roam the swamps"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440113",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Brawne Lamia",
+      "description": "Private investigator and pilgrim, daughter of Senator Byron Lamia, carrying a cybrid's consciousness.",
+      "power_level": 5,
+      "agency": true,
+      "witness_candidate": false,
+      "current_location": null,
+      "physicality": "strong, detective trained",
+      "mentality": "determined, haunted by lost love",
+      "origins": "Lusus, daughter of senator",
+      "motivations": "resurrect Johnny, solve the Shrike mystery"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440114",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Father Lenar Hoyt",
+      "description": "Catholic priest bearing cruciform parasites, suffering constant resurrection pain.",
+      "power_level": 3,
+      "agency": false,
+      "witness_candidate": true,
+      "current_location": null,
+      "physicality": "dying and resurrecting repeatedly",
+      "mentality": "tormented by faith and parasites",
+      "origins": "Catholic Church, Pacem",
+      "motivations": "find redemption or release from cruciform curse"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440115",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Colonel Fedmahn Kassad",
+      "description": "FORCE military commander haunted by visions of Moneta and destined to face the Shrike in combat.",
+      "power_level": 8,
+      "agency": true,
+      "witness_candidate": false,
+      "current_location": null,
+      "physicality": "ultimate soldier, enhanced reflexes",
+      "mentality": "warrior seeking his destiny",
+      "origins": "Mars, FORCE military",
+      "motivations": "meet Moneta, fulfill warrior destiny"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440116",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Sol Weintraub",
+      "description": "Scholar whose infant daughter Rachel ages backward due to the Shrike's time curse.",
+      "power_level": 2,
+      "agency": false,
+      "witness_candidate": true,
+      "current_location": null,
+      "physicality": "elderly scholar carrying infant",
+      "mentality": "desperate father, philosophical",
+      "origins": "Barnard's World, academic",
+      "motivations": "save Rachel from reverse aging"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440117",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Martin Silenus",
+      "description": "Ancient poet who has lived centuries, writing the Hyperion Cantos to summon the Shrike.",
+      "power_level": 4,
+      "agency": true,
+      "witness_candidate": false,
+      "current_location": null,
+      "physicality": "artificially preserved, centuries old",
+      "mentality": "mad poet obsessed with completing his work",
+      "origins": "Old Earth, preserved through treatments",
+      "motivations": "complete the Cantos, meet the Shrike"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440118",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Het Masteen",
+      "description": "Templar captain of the treeship Yggdrasill, devoted to preserving nature.",
+      "power_level": 5,
+      "agency": true,
+      "witness_candidate": false,
+      "current_location": null,
+      "physicality": "tall, robed Templar",
+      "mentality": "mystical connection to nature",
+      "origins": "God's Grove, Templar Brotherhood",
+      "motivations": "protect the Tree of Life"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440215",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "The Time Tombs",
+      "description": "Ancient structures moving backward through time, home to the Shrike, surrounded by anti-entropic fields.",
+      "size_scale": "large",
+      "integrity": 1.0,
+      "witnessed_events": [
+        "The Shrike appearances",
+        "Pilgrims' arrivals",
+        "Time distortions"
+      ],
+      "function": "temporal anomaly and pilgrimage site",
+      "architecture": "impossible geometries defying physics"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440216",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Valley of the Time Tombs",
+      "description": "Desert valley containing the Time Tombs, where time flows strangely and the Shrike hunts.",
+      "size_scale": "vast",
+      "integrity": 0.7,
+      "witnessed_events": [
+        "Shrike massacres",
+        "Pilgrimages",
+        "Time storms"
+      ],
+      "function": "temporal anomaly zone",
+      "architecture": "desert valley with impossible structures"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440217",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Camn System",
+      "description": "Military staging system where FORCE fleets gather.",
+      "size_scale": "vast",
+      "integrity": 0.9,
+      "witnessed_events": [
+        "Fleet mobilization"
+      ],
+      "function": "military base system",
+      "architecture": "star system with military infrastructure"
+    }
+  },
+  {
+    "model": "worlds.collective",
+    "pk": "550e8400-e29b-41d4-a716-446655440A12",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "The Shrike Pilgrims",
+      "description": "Seven pilgrims chosen by lottery to journey to the Time Tombs, each with a request for the Shrike.",
+      "purpose": "pilgrimage to meet the Shrike",
+      "size": 7,
+      "members": [
+        "550e8400-e29b-41d4-a716-446655440111",
+        "550e8400-e29b-41d4-a716-446655440113",
+        "550e8400-e29b-41d4-a716-446655440114",
+        "550e8400-e29b-41d4-a716-446655440115",
+        "550e8400-e29b-41d4-a716-446655440116",
+        "550e8400-e29b-41d4-a716-446655440117",
+        "550e8400-e29b-41d4-a716-446655440118"
+      ],
+      "location": "550e8400-e29b-41d4-a716-446655440215"
+    }
+  },
+  {
+    "model": "worlds.collective",
+    "pk": "550e8400-e29b-41d4-a716-446655440A13",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Evacuation Fleet",
+      "description": "Hegemony fleet sent to evacuate Hyperion before the Ouster invasion.",
+      "purpose": "emergency evacuation",
+      "size": 200,
+      "members": [],
+      "location": null
+    }
+  },
+  {
+    "model": "worlds.collective",
+    "pk": "550e8400-e29b-41d4-a716-446655440A14",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Ouster Migration Cluster",
+      "description": "Massive fleet of 4000+ Ouster ships approaching Hyperion, ranging from ramscouts to comet forts.",
+      "purpose": "conquest or migration",
+      "size": 4000,
+      "members": [],
+      "location": null
+    }
+  },
+  {
+    "model": "worlds.collective",
+    "pk": "550e8400-e29b-41d4-a716-446655440A15",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "FORCE Battle Fleet",
+      "description": "Full military space fleet with farcaster construction capability.",
+      "purpose": "military defense",
+      "size": 500,
+      "members": [
+        "550e8400-e29b-41d4-a716-446655440115"
+      ],
+      "location": "550e8400-e29b-41d4-a716-446655440217"
+    }
+  },
+  {
+    "model": "worlds.species",
+    "pk": "550e8400-e29b-41d4-a716-446655440913",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Ouster",
+      "description": "Space-adapted humans who live in migration clusters, considered barbarians by the Hegemony.",
+      "classification": "Folk - Modified Human",
+      "characteristics": "space-adapted, nomadic, independent",
+      "habitat": []
+    }
+  },
+  {
+    "model": "worlds.species",
+    "pk": "550e8400-e29b-41d4-a716-446655440914",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Templar",
+      "description": "Religious order devoted to preserving nature and treeships.",
+      "classification": "Folk - Religious Order",
+      "characteristics": "tall, robed, mystical connection to nature",
+      "habitat": []
+    }
+  },
+  {
+    "model": "worlds.creature",
+    "pk": "550e8400-e29b-41d4-a716-446655440G11",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "The Shrike",
+      "description": "Temporal predator made of chrome and blades, moving backward through time, granting wishes through death.",
+      "species": null,
+      "power_level": 10,
+      "abilities": [
+        "temporal manipulation",
+        "instant death",
+        "wish granting"
+      ],
+      "location": "550e8400-e29b-41d4-a716-446655440215"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440316",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Ramscout",
+      "description": "Single-person Ouster spacecraft for long-range scouting.",
+      "weight": 100,
+      "resource_type": "physical",
+      "significance": "Ouster exploration vessel",
+      "owned_by": null,
+      "utility": "single-person spacecraft",
+      "materials": "advanced composites"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440317",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Can City",
+      "description": "Massive cylindrical Ouster habitat ship housing thousands.",
+      "weight": 1000000,
+      "resource_type": "physical",
+      "significance": "Mobile Ouster civilization",
+      "owned_by": null,
+      "utility": "city-ship for thousands",
+      "materials": "hollowed asteroids"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440318",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Comet Fort",
+      "description": "Fortified comet converted into Ouster military base.",
+      "weight": 10000000,
+      "resource_type": "physical",
+      "significance": "Ouster military stronghold",
+      "owned_by": null,
+      "utility": "mobile fortress",
+      "materials": "ice and rock"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440319",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Cruciform Parasite",
+      "description": "Cross-shaped organism that grants resurrection but causes constant pain.",
+      "weight": 0.1,
+      "resource_type": "binding",
+      "significance": "Immortality with terrible cost",
+      "owned_by": "550e8400-e29b-41d4-a716-446655440114",
+      "utility": "resurrection device",
+      "materials": "biological parasite"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440320",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "The Hyperion Cantos",
+      "description": "Epic poem being written by Martin Silenus that may summon or control the Shrike.",
+      "weight": 5,
+      "resource_type": "ephemeral",
+      "significance": "Poem that shapes reality",
+      "owned_by": "550e8400-e29b-41d4-a716-446655440117",
+      "utility": "reality-altering poetry",
+      "materials": "words and time"
+    }
+  },
+  {
+    "model": "worlds.institution",
+    "pk": "550e8400-e29b-41d4-a716-446655440712",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "FORCE",
+      "description": "Hegemony military organization responsible for defense against Ousters.",
+      "function": "military defense",
+      "authority": "Hegemony Senate",
+      "members": [
+        "550e8400-e29b-41d4-a716-446655440115"
+      ],
+      "reputation": 80
+    }
+  },
+  {
+    "model": "worlds.institution",
+    "pk": "550e8400-e29b-41d4-a716-446655440713",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "WorldWeb",
+      "description": "Network of worlds connected by farcaster portals.",
+      "function": "interstellar civilization",
+      "authority": "Hegemony governance",
+      "members": [],
+      "reputation": 90
+    }
+  },
+  {
+    "model": "worlds.institution",
+    "pk": "550e8400-e29b-41d4-a716-446655440714",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "FORCE Joint Chiefs",
+      "description": "Military high command planning defense against Ousters.",
+      "function": "strategic command",
+      "authority": "military hierarchy",
+      "members": [],
+      "reputation": 70
+    }
+  },
+  {
+    "model": "worlds.institution",
+    "pk": "550e8400-e29b-41d4-a716-446655440715",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Templar Brotherhood",
+      "description": "Religious order devoted to nature and treeships.",
+      "function": "religious preservation",
+      "authority": "spiritual hierarchy",
+      "members": [
+        "550e8400-e29b-41d4-a716-446655440118"
+      ],
+      "reputation": 65
+    }
+  },
+  {
+    "model": "worlds.institution",
+    "pk": "550e8400-e29b-41d4-a716-446655440716",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Catholic Church",
+      "description": "Ancient Earth religion surviving in the far future.",
+      "function": "religious authority",
+      "authority": "Pacem Vatican",
+      "members": [
+        "550e8400-e29b-41d4-a716-446655440114"
+      ],
+      "reputation": 55
+    }
+  },
+  {
+    "model": "worlds.event",
+    "pk": "550e8400-e29b-41d4-a716-446655440E12",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "The Final Shrike Pilgrimage",
+      "description": "Seven pilgrims journey to the Time Tombs as war approaches.",
+      "participants": [
+        "550e8400-e29b-41d4-a716-446655440111",
+        "550e8400-e29b-41d4-a716-446655440113",
+        "550e8400-e29b-41d4-a716-446655440114",
+        "550e8400-e29b-41d4-a716-446655440115",
+        "550e8400-e29b-41d4-a716-446655440116",
+        "550e8400-e29b-41d4-a716-446655440117",
+        "550e8400-e29b-41d4-a716-446655440118"
+      ],
+      "location": "550e8400-e29b-41d4-a716-446655440215",
+      "consequences": "One wish granted, others die, future determined",
+      "intensity": 100
+    }
+  },
+  {
+    "model": "worlds.event",
+    "pk": "550e8400-e29b-41d4-a716-446655440E13",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Ouster Invasion of Hyperion",
+      "description": "Massive Ouster fleet approaches to capture Hyperion and the Time Tombs.",
+      "participants": [],
+      "location": "550e8400-e29b-41d4-a716-446655440212",
+      "consequences": "War between Hegemony and Ousters",
+      "intensity": 95
+    }
+  },
+  {
+    "model": "worlds.event",
+    "pk": "550e8400-e29b-41d4-a716-446655440E14",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Hyperion Evacuation",
+      "description": "Hegemony attempts to evacuate civilians before Ouster arrival.",
+      "participants": [
+        "550e8400-e29b-41d4-a716-446655440112"
+      ],
+      "location": "550e8400-e29b-41d4-a716-446655440212",
+      "consequences": "Partial evacuation, many stranded",
+      "intensity": 80
+    }
+  },
+  {
+    "model": "worlds.phenomenon",
+    "pk": "550e8400-e29b-41d4-a716-446655440B13",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Anti-Entropic Field",
+      "description": "Time flows backward around the Time Tombs.",
+      "effects": "temporal reversal, causality violations",
+      "frequency": "constant",
+      "intensity": 100,
+      "locations": [
+        "550e8400-e29b-41d4-a716-446655440215",
+        "550e8400-e29b-41d4-a716-446655440216"
+      ]
+    }
+  },
+  {
+    "model": "worlds.phenomenon",
+    "pk": "550e8400-e29b-41d4-a716-446655440B14",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Merlin's Sickness",
+      "description": "Reverse aging caused by exposure to anti-entropic fields.",
+      "effects": "victim ages backward to nonexistence",
+      "frequency": "upon exposure",
+      "intensity": 100,
+      "locations": [
+        "550e8400-e29b-41d4-a716-446655440215"
+      ]
+    }
+  },
+  {
+    "model": "worlds.construct",
+    "pk": "550e8400-e29b-41d4-a716-446655440C13",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Farcaster Network",
+      "description": "Instantaneous portal system connecting WorldWeb planets.",
+      "function": "interstellar transport",
+      "technology": "singularity manipulation",
+      "creators": [
+        "550e8400-e29b-41d4-a716-446655440711"
+      ],
+      "locations": []
+    }
+  },
+  {
+    "model": "worlds.construct",
+    "pk": "550e8400-e29b-41d4-a716-446655440C14",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Treeship Yggdrasill",
+      "description": "Living kilometer-tall tree modified as spacecraft.",
+      "function": "organic spacecraft",
+      "technology": "bioengineering and containment fields",
+      "creators": [
+        "550e8400-e29b-41d4-a716-446655440715"
+      ],
+      "locations": []
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F15",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Pilgrims Journey Together",
+      "type": "alliance",
+      "actor": "550e8400-e29b-41d4-a716-446655440A12",
+      "involves_characters": [
+        "550e8400-e29b-41d4-a716-446655440111",
+        "550e8400-e29b-41d4-a716-446655440113",
+        "550e8400-e29b-41d4-a716-446655440114",
+        "550e8400-e29b-41d4-a716-446655440115",
+        "550e8400-e29b-41d4-a716-446655440116",
+        "550e8400-e29b-41d4-a716-446655440117",
+        "550e8400-e29b-41d4-a716-446655440118"
+      ],
+      "involves_locations": [
+        "550e8400-e29b-41d4-a716-446655440215"
+      ],
+      "involves_objects": [],
+      "involves_events": [
+        "550e8400-e29b-41d4-a716-446655440E12"
+      ],
+      "intensity": 75,
+      "background": "Chosen by lottery for final pilgrimage"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F16",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Ousters Threaten Hegemony",
+      "type": "conflict",
+      "actor": "550e8400-e29b-41d4-a716-446655440A14",
+      "involves_characters": [],
+      "involves_locations": [
+        "550e8400-e29b-41d4-a716-446655440212"
+      ],
+      "involves_objects": [
+        "550e8400-e29b-41d4-a716-446655440316",
+        "550e8400-e29b-41d4-a716-446655440317",
+        "550e8400-e29b-41d4-a716-446655440318"
+      ],
+      "involves_events": [
+        "550e8400-e29b-41d4-a716-446655440E13"
+      ],
+      "intensity": 95,
+      "background": "Barbarian invasion or strategic conquest"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F17",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Hoyt Bears Cruciform Curse",
+      "type": "affliction",
+      "actor": "550e8400-e29b-41d4-a716-446655440114",
+      "involves_characters": [
+        "550e8400-e29b-41d4-a716-446655440114"
+      ],
+      "involves_locations": [],
+      "involves_objects": [
+        "550e8400-e29b-41d4-a716-446655440319"
+      ],
+      "involves_events": [],
+      "intensity": 90,
+      "background": "Parasites grant immortality with constant pain"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F18",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Rachel Ages Backward",
+      "type": "affliction",
+      "actor": "550e8400-e29b-41d4-a716-446655440116",
+      "involves_characters": [
+        "550e8400-e29b-41d4-a716-446655440116"
+      ],
+      "involves_locations": [
+        "550e8400-e29b-41d4-a716-446655440215"
+      ],
+      "involves_objects": [],
+      "involves_events": [],
+      "intensity": 100,
+      "background": "Merlin's Sickness from Time Tomb exposure"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F19",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Silenus Writes Reality",
+      "type": "creation",
+      "actor": "550e8400-e29b-41d4-a716-446655440117",
+      "involves_characters": [
+        "550e8400-e29b-41d4-a716-446655440117"
+      ],
+      "involves_locations": [],
+      "involves_objects": [
+        "550e8400-e29b-41d4-a716-446655440320"
+      ],
+      "involves_events": [],
+      "intensity": 85,
+      "background": "Epic poem may control or summon the Shrike"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F20",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Kassad Seeks Warrior Destiny",
+      "type": "quest",
+      "actor": "550e8400-e29b-41d4-a716-446655440115",
+      "involves_characters": [
+        "550e8400-e29b-41d4-a716-446655440115"
+      ],
+      "involves_locations": [
+        "550e8400-e29b-41d4-a716-446655440215"
+      ],
+      "involves_objects": [],
+      "involves_events": [
+        "550e8400-e29b-41d4-a716-446655440E12"
+      ],
+      "intensity": 90,
+      "background": "Destined to face the Shrike in combat"
+    }
+  },
+  {
+    "model": "worlds.world",
+    "pk": "550e8400-e29b-41d4-a716-446655440003",
+    "fields": {
+      "name": "The Wager's Doomed Voyage",
+      "description": "A British naval expedition in the 1740s that ends in shipwreck, survival, mutiny, and competing narratives of truth.",
+      "hidden_truth": "There is no single truth in survival - only competing stories told by those who lived.",
+      "witness_type": "midshipman",
+      "resource_types": {
+        "ephemeral": "promises of rescue and naval honor",
+        "physical": "salvaged ship materials and scarce food",
+        "binding": "naval law and chains of command"
+      },
+      "degradation_vector": "Authority dissolves when survival is at stake"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440121",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "David Cheap",
+      "description": "First Lieutenant of the Centurion, a burly Scotsman fleeing debts and family disputes, who will later become the tyrannical captain of the wrecked Wager.",
+      "power_level": 7,
+      "agency": true,
+      "witness_candidate": false,
+      "current_location": "550e8400-e29b-41d4-a716-446655440221",
+      "physicality": "burly build, protracted nose, intense eyes",
+      "mentality": "fleeing personal failures, seeking naval glory",
+      "origins": "Scottish nobility with inheritance disputes",
+      "motivations": "escape debts, gain fortune, maintain authority"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440122",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "John Byron",
+      "description": "Young midshipman who will witness the disaster and later write his own account of events.",
+      "power_level": 3,
+      "agency": false,
+      "witness_candidate": true,
+      "current_location": "550e8400-e29b-41d4-a716-446655440222",
+      "physicality": "young, observant",
+      "mentality": "eager for adventure, keen observer",
+      "origins": "minor nobility seeking naval career",
+      "motivations": "survive and tell the true story"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440123",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "George Anson",
+      "description": "Commodore commanding the entire squadron, ambitious leader of the expedition against Spanish treasure.",
+      "power_level": 9,
+      "agency": true,
+      "witness_candidate": false,
+      "current_location": "550e8400-e29b-41d4-a716-446655440221",
+      "physicality": "commanding presence",
+      "mentality": "ambitious, strategic, focused on glory",
+      "origins": "British naval establishment",
+      "motivations": "capture Spanish treasure, achieve fame"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440124",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "John Bulkeley",
+      "description": "Gunner who will lead the mutiny against Cheap, practical survivor who documents everything.",
+      "power_level": 5,
+      "agency": true,
+      "witness_candidate": false,
+      "current_location": "550e8400-e29b-41d4-a716-446655440222",
+      "physicality": "practical seaman's build",
+      "mentality": "methodical, documenting, planning",
+      "origins": "experienced gunner from lower ranks",
+      "motivations": "survival through practical action"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440125",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "David Cheap's Brother",
+      "description": "Unnamed brother disputing inheritance with David Cheap back in Scotland.",
+      "power_level": 4,
+      "agency": true,
+      "witness_candidate": false,
+      "current_location": null,
+      "physicality": "unknown",
+      "mentality": "litigious, grasping",
+      "origins": "Scottish nobility",
+      "motivations": "secure family inheritance"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440221",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "HMS Centurion",
+      "description": "The squadron's flagship, a 60-gun fourth-rate ship of the line commanded by Commodore Anson.",
+      "size_scale": "large",
+      "integrity": 0.95,
+      "witnessed_events": [
+        "Squadron departure",
+        "Cheap's assignment"
+      ],
+      "function": "warship and flagship",
+      "architecture": "60-gun fourth-rate ship of the line"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440222",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "HMS Wager",
+      "description": "Store ship that will wreck on a desolate island, becoming the site of survival and mutiny.",
+      "size_scale": "medium",
+      "integrity": 0.85,
+      "witnessed_events": [
+        "Future shipwreck",
+        "Future mutiny"
+      ],
+      "function": "store ship and transport",
+      "architecture": "converted merchant vessel"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440223",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Wager Island",
+      "description": "Desolate island off Patagonia where the Wager will wreck, site of desperate survival.",
+      "size_scale": "medium",
+      "integrity": 0.4,
+      "witnessed_events": [
+        "Shipwreck",
+        "Mutiny",
+        "Desperate survival"
+      ],
+      "function": "uninhabited island",
+      "architecture": "rocky shores, minimal vegetation"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440224",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Cape Horn",
+      "description": "Treacherous passage around South America where storms destroy ships.",
+      "size_scale": "vast",
+      "integrity": 0.3,
+      "witnessed_events": [
+        "Storm passages",
+        "Ship losses"
+      ],
+      "function": "maritime passage",
+      "architecture": "dangerous waters and storms"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440225",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Spanish Main",
+      "description": "Spanish colonial waters where treasure galleons sail, the squadron's ultimate target.",
+      "size_scale": "vast",
+      "integrity": 0.7,
+      "witnessed_events": [
+        "Treasure ship raids"
+      ],
+      "function": "colonial trade waters",
+      "architecture": "ocean trade routes"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440321",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Sea Chest",
+      "description": "Personal storage container each sailor carries with their few possessions and secrets.",
+      "weight": 30,
+      "resource_type": "physical",
+      "significance": "Contains personal history and necessities",
+      "owned_by": null,
+      "utility": "personal storage",
+      "materials": "wood and iron"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440322",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Ship's Log",
+      "description": "Official record that will become evidence in courts martial and competing narratives.",
+      "weight": 5,
+      "resource_type": "binding",
+      "significance": "Legal record and version of truth",
+      "owned_by": null,
+      "utility": "official documentation",
+      "materials": "bound paper and ink"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440323",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Naval Commission",
+      "description": "Official document granting rank and authority, becomes meaningless after wreck.",
+      "weight": 0.1,
+      "resource_type": "binding",
+      "significance": "Source of legitimate authority",
+      "owned_by": "550e8400-e29b-41d4-a716-446655440121",
+      "utility": "legal authority",
+      "materials": "parchment and seal"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440324",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Spanish Treasure",
+      "description": "The mythical wealth the squadron seeks, driving men to their doom.",
+      "weight": 1000,
+      "resource_type": "physical",
+      "significance": "Ultimate goal worth any sacrifice",
+      "owned_by": null,
+      "utility": "wealth beyond measure",
+      "materials": "gold and silver"
+    }
+  },
+  {
+    "model": "worlds.institution",
+    "pk": "550e8400-e29b-41d4-a716-446655440721",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Royal Navy",
+      "description": "British naval force projecting power across the globe through discipline and violence.",
+      "function": "military naval power",
+      "authority": "British Crown",
+      "members": [
+        "550e8400-e29b-41d4-a716-446655440121",
+        "550e8400-e29b-41d4-a716-446655440122",
+        "550e8400-e29b-41d4-a716-446655440123",
+        "550e8400-e29b-41d4-a716-446655440124"
+      ],
+      "reputation": 85
+    }
+  },
+  {
+    "model": "worlds.institution",
+    "pk": "550e8400-e29b-41d4-a716-446655440722",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "The Squadron",
+      "description": "Anson's expedition force sent to raid Spanish treasure ships.",
+      "function": "military expedition",
+      "authority": "Commodore Anson",
+      "members": [
+        "550e8400-e29b-41d4-a716-446655440121",
+        "550e8400-e29b-41d4-a716-446655440122",
+        "550e8400-e29b-41d4-a716-446655440123",
+        "550e8400-e29b-41d4-a716-446655440124"
+      ],
+      "reputation": 60
+    }
+  },
+  {
+    "model": "worlds.collective",
+    "pk": "550e8400-e29b-41d4-a716-446655440A21",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Cheap's Creditors",
+      "description": "Group of financial lenders pursuing David Cheap for unpaid debts in Scotland.",
+      "purpose": "debt collection",
+      "size": 8,
+      "members": [],
+      "location": null
+    }
+  },
+  {
+    "model": "worlds.collective",
+    "pk": "550e8400-e29b-41d4-a716-446655440A22",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "The Wager's Crew",
+      "description": "Sailors who will endure shipwreck, starvation, and choose between loyalty and survival.",
+      "purpose": "naval service and survival",
+      "size": 150,
+      "members": [
+        "550e8400-e29b-41d4-a716-446655440122",
+        "550e8400-e29b-41d4-a716-446655440124"
+      ],
+      "location": "550e8400-e29b-41d4-a716-446655440222"
+    }
+  },
+  {
+    "model": "worlds.collective",
+    "pk": "550e8400-e29b-41d4-a716-446655440A23",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "The Mutineers",
+      "description": "Bulkeley's faction who will reject Cheap's authority after the wreck.",
+      "purpose": "survival through rebellion",
+      "size": 80,
+      "members": [
+        "550e8400-e29b-41d4-a716-446655440124"
+      ],
+      "location": "550e8400-e29b-41d4-a716-446655440223"
+    }
+  },
+  {
+    "model": "worlds.collective",
+    "pk": "550e8400-e29b-41d4-a716-446655440A24",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "The Loyalists",
+      "description": "Those who remain with Captain Cheap after the mutiny.",
+      "purpose": "maintain naval authority",
+      "size": 20,
+      "members": [
+        "550e8400-e29b-41d4-a716-446655440121"
+      ],
+      "location": "550e8400-e29b-41d4-a716-446655440223"
+    }
+  },
+  {
+    "model": "worlds.title",
+    "pk": "550e8400-e29b-41d4-a716-446655440821",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "First Lieutenant",
+      "description": "Second in command of a warship, executive officer.",
+      "authority": "naval command",
+      "holders": [
+        "550e8400-e29b-41d4-a716-446655440121"
+      ],
+      "institutions": [
+        "550e8400-e29b-41d4-a716-446655440721"
+      ]
+    }
+  },
+  {
+    "model": "worlds.title",
+    "pk": "550e8400-e29b-41d4-a716-446655440822",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Commodore",
+      "description": "Senior captain commanding a squadron.",
+      "authority": "squadron command",
+      "holders": [
+        "550e8400-e29b-41d4-a716-446655440123"
+      ],
+      "institutions": [
+        "550e8400-e29b-41d4-a716-446655440721",
+        "550e8400-e29b-41d4-a716-446655440722"
+      ]
+    }
+  },
+  {
+    "model": "worlds.title",
+    "pk": "550e8400-e29b-41d4-a716-446655440823",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Midshipman",
+      "description": "Junior officer in training, often young gentlemen.",
+      "authority": "minimal",
+      "holders": [
+        "550e8400-e29b-41d4-a716-446655440122"
+      ],
+      "institutions": [
+        "550e8400-e29b-41d4-a716-446655440721"
+      ]
+    }
+  },
+  {
+    "model": "worlds.title",
+    "pk": "550e8400-e29b-41d4-a716-446655440824",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Gunner",
+      "description": "Warrant officer responsible for ship's artillery and powder.",
+      "authority": "technical expertise",
+      "holders": [
+        "550e8400-e29b-41d4-a716-446655440124"
+      ],
+      "institutions": [
+        "550e8400-e29b-41d4-a716-446655440721"
+      ]
+    }
+  },
+  {
+    "model": "worlds.trait",
+    "pk": "550e8400-e29b-41d4-a716-446655440601",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Hunger for Fame and Fortune",
+      "description": "Driving ambition that sends men to sea despite the dangers.",
+      "physical_effects": "restlessness, risk-taking",
+      "social_effects": "drives men to extremes",
+      "significance": 75,
+      "bearers": [
+        "550e8400-e29b-41d4-a716-446655440121",
+        "550e8400-e29b-41d4-a716-446655440123"
+      ]
+    }
+  },
+  {
+    "model": "worlds.trait",
+    "pk": "550e8400-e29b-41d4-a716-446655440602",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Fear of Death",
+      "description": "Dread that haunts every sailor facing the sea's violence.",
+      "physical_effects": "anxiety, caution",
+      "social_effects": "creates solidarity or panic",
+      "significance": 80,
+      "bearers": []
+    }
+  },
+  {
+    "model": "worlds.trait",
+    "pk": "550e8400-e29b-41d4-a716-446655440603",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Protracted Nose",
+      "description": "Distinctive facial feature of David Cheap.",
+      "physical_effects": "memorable appearance",
+      "social_effects": "easy identification",
+      "significance": 30,
+      "bearers": [
+        "550e8400-e29b-41d4-a716-446655440121"
+      ]
+    }
+  },
+  {
+    "model": "worlds.event",
+    "pk": "550e8400-e29b-41d4-a716-446655440E21",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Squadron Departure",
+      "description": "Anson's squadron departs England for the Pacific to raid Spanish treasure.",
+      "participants": [
+        "550e8400-e29b-41d4-a716-446655440121",
+        "550e8400-e29b-41d4-a716-446655440122",
+        "550e8400-e29b-41d4-a716-446655440123",
+        "550e8400-e29b-41d4-a716-446655440124"
+      ],
+      "location": null,
+      "consequences": "Beginning of doomed voyage",
+      "intensity": 70
+    }
+  },
+  {
+    "model": "worlds.event",
+    "pk": "550e8400-e29b-41d4-a716-446655440E22",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Inheritance Dispute",
+      "description": "David Cheap fights with his brother over family estate in Scotland.",
+      "participants": [
+        "550e8400-e29b-41d4-a716-446655440121",
+        "550e8400-e29b-41d4-a716-446655440125"
+      ],
+      "location": null,
+      "consequences": "Cheap flees to sea",
+      "intensity": 60
+    }
+  },
+  {
+    "model": "worlds.event",
+    "pk": "550e8400-e29b-41d4-a716-446655440E23",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "The Wager Shipwreck",
+      "description": "The Wager crashes on a desolate island off Patagonia during a storm.",
+      "participants": [
+        "550e8400-e29b-41d4-a716-446655440121",
+        "550e8400-e29b-41d4-a716-446655440122",
+        "550e8400-e29b-41d4-a716-446655440124"
+      ],
+      "location": "550e8400-e29b-41d4-a716-446655440223",
+      "consequences": "Beginning of survival horror and mutiny",
+      "intensity": 95
+    }
+  },
+  {
+    "model": "worlds.event",
+    "pk": "550e8400-e29b-41d4-a716-446655440E24",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "The Mutiny",
+      "description": "Bulkeley leads majority of survivors to reject Cheap's authority.",
+      "participants": [
+        "550e8400-e29b-41d4-a716-446655440121",
+        "550e8400-e29b-41d4-a716-446655440124"
+      ],
+      "location": "550e8400-e29b-41d4-a716-446655440223",
+      "consequences": "Split into factions, competing survival attempts",
+      "intensity": 90
+    }
+  },
+  {
+    "model": "worlds.phenomenon",
+    "pk": "550e8400-e29b-41d4-a716-446655440B21",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Cape Horn Storms",
+      "description": "Violent tempests that destroy ships attempting the passage.",
+      "effects": "shipwrecks, crew losses, navigation failure",
+      "frequency": "constant during winter",
+      "intensity": 95,
+      "locations": [
+        "550e8400-e29b-41d4-a716-446655440224"
+      ]
+    }
+  },
+  {
+    "model": "worlds.phenomenon",
+    "pk": "550e8400-e29b-41d4-a716-446655440B22",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Scurvy",
+      "description": "Disease that ravages crews on long voyages, causing teeth to fall out and wounds to reopen.",
+      "effects": "weakness, bleeding, death",
+      "frequency": "after months at sea",
+      "intensity": 85,
+      "locations": []
+    }
+  },
+  {
+    "model": "worlds.law",
+    "pk": "550e8400-e29b-41d4-a716-446655440L21",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Articles of War",
+      "description": "Naval law governing conduct, with death as common punishment.",
+      "jurisdiction": "all Royal Navy vessels",
+      "enforcers": [
+        "550e8400-e29b-41d4-a716-446655440721"
+      ],
+      "punishment": "flogging, hanging, marooning",
+      "authority": 90
+    }
+  },
+  {
+    "model": "worlds.law",
+    "pk": "550e8400-e29b-41d4-a716-446655440L22",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Prize Law",
+      "description": "Rules governing capture and distribution of enemy treasure.",
+      "jurisdiction": "captured vessels",
+      "enforcers": [
+        "550e8400-e29b-41d4-a716-446655440721"
+      ],
+      "punishment": "loss of share",
+      "authority": 75
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F21",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Cheap Flees Debts",
+      "type": "escape",
+      "actor": "550e8400-e29b-41d4-a716-446655440121",
+      "involves_characters": [
+        "550e8400-e29b-41d4-a716-446655440121"
+      ],
+      "involves_locations": [],
+      "involves_objects": [],
+      "involves_events": [
+        "550e8400-e29b-41d4-a716-446655440E22"
+      ],
+      "intensity": 70,
+      "background": "Escapes to sea from financial and family troubles"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F22",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Byron Witnesses All",
+      "type": "observation",
+      "actor": "550e8400-e29b-41d4-a716-446655440122",
+      "involves_characters": [
+        "550e8400-e29b-41d4-a716-446655440122",
+        "550e8400-e29b-41d4-a716-446655440121",
+        "550e8400-e29b-41d4-a716-446655440124"
+      ],
+      "involves_locations": [
+        "550e8400-e29b-41d4-a716-446655440222",
+        "550e8400-e29b-41d4-a716-446655440223"
+      ],
+      "involves_objects": [],
+      "involves_events": [
+        "550e8400-e29b-41d4-a716-446655440E23",
+        "550e8400-e29b-41d4-a716-446655440E24"
+      ],
+      "intensity": 80,
+      "background": "Young midshipman observes and survives to tell the tale"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F23",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Bulkeley Leads Mutiny",
+      "type": "rebellion",
+      "actor": "550e8400-e29b-41d4-a716-446655440124",
+      "involves_characters": [
+        "550e8400-e29b-41d4-a716-446655440124",
+        "550e8400-e29b-41d4-a716-446655440121"
+      ],
+      "involves_locations": [
+        "550e8400-e29b-41d4-a716-446655440223"
+      ],
+      "involves_objects": [
+        "550e8400-e29b-41d4-a716-446655440323"
+      ],
+      "involves_events": [
+        "550e8400-e29b-41d4-a716-446655440E24"
+      ],
+      "intensity": 90,
+      "background": "Rejects Cheap's authority after shipwreck"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F24",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Anson Commands Squadron",
+      "type": "authority",
+      "actor": "550e8400-e29b-41d4-a716-446655440123",
+      "involves_characters": [
+        "550e8400-e29b-41d4-a716-446655440123",
+        "550e8400-e29b-41d4-a716-446655440121"
+      ],
+      "involves_locations": [
+        "550e8400-e29b-41d4-a716-446655440221"
+      ],
+      "involves_objects": [],
+      "involves_events": [
+        "550e8400-e29b-41d4-a716-446655440E21"
+      ],
+      "intensity": 85,
+      "background": "Commodore's authority over the expedition"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F25",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440003",
+      "name": "Brothers Dispute Inheritance",
+      "type": "conflict",
+      "actor": "550e8400-e29b-41d4-a716-446655440121",
+      "involves_characters": [
+        "550e8400-e29b-41d4-a716-446655440121",
+        "550e8400-e29b-41d4-a716-446655440125"
+      ],
+      "involves_locations": [],
+      "involves_objects": [],
+      "involves_events": [
+        "550e8400-e29b-41d4-a716-446655440E22"
+      ],
+      "intensity": 75,
+      "background": "Family conflict over Scottish estate"
+    }
+  }
+]

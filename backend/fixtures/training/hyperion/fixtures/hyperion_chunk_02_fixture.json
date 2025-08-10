@@ -1,0 +1,562 @@
+[
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440113",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Brawne Lamia",
+      "description": "Private investigator and pilgrim, daughter of Senator Byron Lamia, carrying a cybrid's consciousness.",
+      "power_level": 5,
+      "agency": true,
+      "witness_candidate": false,
+      "current_location": null,
+      "physicality": "strong, detective trained",
+      "mentality": "determined, haunted by lost love",
+      "origins": "Lusus, daughter of senator",
+      "motivations": "resurrect Johnny, solve the Shrike mystery"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440114",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Father Lenar Hoyt",
+      "description": "Catholic priest bearing cruciform parasites, suffering constant resurrection pain.",
+      "power_level": 3,
+      "agency": false,
+      "witness_candidate": true,
+      "current_location": null,
+      "physicality": "dying and resurrecting repeatedly",
+      "mentality": "tormented by faith and parasites",
+      "origins": "Catholic Church, Pacem",
+      "motivations": "find redemption or release from cruciform curse"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440115",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Colonel Fedmahn Kassad",
+      "description": "FORCE military commander haunted by visions of Moneta and destined to face the Shrike in combat.",
+      "power_level": 8,
+      "agency": true,
+      "witness_candidate": false,
+      "current_location": null,
+      "physicality": "ultimate soldier, enhanced reflexes",
+      "mentality": "warrior seeking his destiny",
+      "origins": "Mars, FORCE military",
+      "motivations": "meet Moneta, fulfill warrior destiny"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440116",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Sol Weintraub",
+      "description": "Scholar whose infant daughter Rachel ages backward due to the Shrike's time curse.",
+      "power_level": 2,
+      "agency": false,
+      "witness_candidate": true,
+      "current_location": null,
+      "physicality": "elderly scholar carrying infant",
+      "mentality": "desperate father, philosophical",
+      "origins": "Barnard's World, academic",
+      "motivations": "save Rachel from reverse aging"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440117",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Martin Silenus",
+      "description": "Ancient poet who has lived centuries, writing the Hyperion Cantos to summon the Shrike.",
+      "power_level": 4,
+      "agency": true,
+      "witness_candidate": false,
+      "current_location": null,
+      "physicality": "artificially preserved, centuries old",
+      "mentality": "mad poet obsessed with completing his work",
+      "origins": "Old Earth, preserved through treatments",
+      "motivations": "complete the Cantos, meet the Shrike"
+    }
+  },
+  {
+    "model": "worlds.character",
+    "pk": "550e8400-e29b-41d4-a716-446655440118",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Het Masteen",
+      "description": "Templar captain of the treeship Yggdrasill, devoted to preserving nature.",
+      "power_level": 5,
+      "agency": true,
+      "witness_candidate": false,
+      "current_location": null,
+      "physicality": "tall, robed Templar",
+      "mentality": "mystical connection to nature",
+      "origins": "God's Grove, Templar Brotherhood",
+      "motivations": "protect the Tree of Life"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440215",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "The Time Tombs",
+      "description": "Ancient structures moving backward through time, home to the Shrike, surrounded by anti-entropic fields.",
+      "size_scale": "large",
+      "integrity": 1.0,
+      "witnessed_events": ["The Shrike appearances", "Pilgrims' arrivals", "Time distortions"],
+      "function": "temporal anomaly and pilgrimage site",
+      "architecture": "impossible geometries defying physics"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440216",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Valley of the Time Tombs",
+      "description": "Desert valley containing the Time Tombs, where time flows strangely and the Shrike hunts.",
+      "size_scale": "vast",
+      "integrity": 0.7,
+      "witnessed_events": ["Shrike massacres", "Pilgrimages", "Time storms"],
+      "function": "temporal anomaly zone",
+      "architecture": "desert valley with impossible structures"
+    }
+  },
+  {
+    "model": "worlds.location",
+    "pk": "550e8400-e29b-41d4-a716-446655440217",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Camn System",
+      "description": "Military staging system where FORCE fleets gather.",
+      "size_scale": "vast",
+      "integrity": 0.9,
+      "witnessed_events": ["Fleet mobilization"],
+      "function": "military base system",
+      "architecture": "star system with military infrastructure"
+    }
+  },
+  {
+    "model": "worlds.collective",
+    "pk": "550e8400-e29b-41d4-a716-446655440A12",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "The Shrike Pilgrims",
+      "description": "Seven pilgrims chosen by lottery to journey to the Time Tombs, each with a request for the Shrike.",
+      "purpose": "pilgrimage to meet the Shrike",
+      "size": 7,
+      "members": ["550e8400-e29b-41d4-a716-446655440111", "550e8400-e29b-41d4-a716-446655440113", "550e8400-e29b-41d4-a716-446655440114", "550e8400-e29b-41d4-a716-446655440115", "550e8400-e29b-41d4-a716-446655440116", "550e8400-e29b-41d4-a716-446655440117", "550e8400-e29b-41d4-a716-446655440118"],
+      "location": "550e8400-e29b-41d4-a716-446655440215"
+    }
+  },
+  {
+    "model": "worlds.collective",
+    "pk": "550e8400-e29b-41d4-a716-446655440A13",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Evacuation Fleet",
+      "description": "Hegemony fleet sent to evacuate Hyperion before the Ouster invasion.",
+      "purpose": "emergency evacuation",
+      "size": 200,
+      "members": [],
+      "location": null
+    }
+  },
+  {
+    "model": "worlds.collective",
+    "pk": "550e8400-e29b-41d4-a716-446655440A14",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Ouster Migration Cluster",
+      "description": "Massive fleet of 4000+ Ouster ships approaching Hyperion, ranging from ramscouts to comet forts.",
+      "purpose": "conquest or migration",
+      "size": 4000,
+      "members": [],
+      "location": null
+    }
+  },
+  {
+    "model": "worlds.collective",
+    "pk": "550e8400-e29b-41d4-a716-446655440A15",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "FORCE Battle Fleet",
+      "description": "Full military space fleet with farcaster construction capability.",
+      "purpose": "military defense",
+      "size": 500,
+      "members": ["550e8400-e29b-41d4-a716-446655440115"],
+      "location": "550e8400-e29b-41d4-a716-446655440217"
+    }
+  },
+  {
+    "model": "worlds.species",
+    "pk": "550e8400-e29b-41d4-a716-446655440913",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Ouster",
+      "description": "Space-adapted humans who live in migration clusters, considered barbarians by the Hegemony.",
+      "classification": "Folk - Modified Human",
+      "characteristics": "space-adapted, nomadic, independent",
+      "habitat": []
+    }
+  },
+  {
+    "model": "worlds.species",
+    "pk": "550e8400-e29b-41d4-a716-446655440914",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Templar",
+      "description": "Religious order devoted to preserving nature and treeships.",
+      "classification": "Folk - Religious Order",
+      "characteristics": "tall, robed, mystical connection to nature",
+      "habitat": []
+    }
+  },
+  {
+    "model": "worlds.creature",
+    "pk": "550e8400-e29b-41d4-a716-446655440G11",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "The Shrike",
+      "description": "Temporal predator made of chrome and blades, moving backward through time, granting wishes through death.",
+      "species": null,
+      "power_level": 10,
+      "abilities": ["temporal manipulation", "instant death", "wish granting"],
+      "location": "550e8400-e29b-41d4-a716-446655440215"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440316",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Ramscout",
+      "description": "Single-person Ouster spacecraft for long-range scouting.",
+      "weight": 100,
+      "resource_type": "physical",
+      "significance": "Ouster exploration vessel",
+      "owned_by": null,
+      "utility": "single-person spacecraft",
+      "materials": "advanced composites"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440317",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Can City",
+      "description": "Massive cylindrical Ouster habitat ship housing thousands.",
+      "weight": 1000000,
+      "resource_type": "physical",
+      "significance": "Mobile Ouster civilization",
+      "owned_by": null,
+      "utility": "city-ship for thousands",
+      "materials": "hollowed asteroids"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440318",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Comet Fort",
+      "description": "Fortified comet converted into Ouster military base.",
+      "weight": 10000000,
+      "resource_type": "physical",
+      "significance": "Ouster military stronghold",
+      "owned_by": null,
+      "utility": "mobile fortress",
+      "materials": "ice and rock"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440319",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Cruciform Parasite",
+      "description": "Cross-shaped organism that grants resurrection but causes constant pain.",
+      "weight": 0.1,
+      "resource_type": "binding",
+      "significance": "Immortality with terrible cost",
+      "owned_by": "550e8400-e29b-41d4-a716-446655440114",
+      "utility": "resurrection device",
+      "materials": "biological parasite"
+    }
+  },
+  {
+    "model": "worlds.object",
+    "pk": "550e8400-e29b-41d4-a716-446655440320",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "The Hyperion Cantos",
+      "description": "Epic poem being written by Martin Silenus that may summon or control the Shrike.",
+      "weight": 5,
+      "resource_type": "ephemeral",
+      "significance": "Poem that shapes reality",
+      "owned_by": "550e8400-e29b-41d4-a716-446655440117",
+      "utility": "reality-altering poetry",
+      "materials": "words and time"
+    }
+  },
+  {
+    "model": "worlds.institution",
+    "pk": "550e8400-e29b-41d4-a716-446655440712",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "FORCE",
+      "description": "Hegemony military organization responsible for defense against Ousters.",
+      "function": "military defense",
+      "authority": "Hegemony Senate",
+      "members": ["550e8400-e29b-41d4-a716-446655440115"],
+      "reputation": 80
+    }
+  },
+  {
+    "model": "worlds.institution",
+    "pk": "550e8400-e29b-41d4-a716-446655440713",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "WorldWeb",
+      "description": "Network of worlds connected by farcaster portals.",
+      "function": "interstellar civilization",
+      "authority": "Hegemony governance",
+      "members": [],
+      "reputation": 90
+    }
+  },
+  {
+    "model": "worlds.institution",
+    "pk": "550e8400-e29b-41d4-a716-446655440714",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "FORCE Joint Chiefs",
+      "description": "Military high command planning defense against Ousters.",
+      "function": "strategic command",
+      "authority": "military hierarchy",
+      "members": [],
+      "reputation": 70
+    }
+  },
+  {
+    "model": "worlds.institution",
+    "pk": "550e8400-e29b-41d4-a716-446655440715",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Templar Brotherhood",
+      "description": "Religious order devoted to nature and treeships.",
+      "function": "religious preservation",
+      "authority": "spiritual hierarchy",
+      "members": ["550e8400-e29b-41d4-a716-446655440118"],
+      "reputation": 65
+    }
+  },
+  {
+    "model": "worlds.institution",
+    "pk": "550e8400-e29b-41d4-a716-446655440716",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Catholic Church",
+      "description": "Ancient Earth religion surviving in the far future.",
+      "function": "religious authority",
+      "authority": "Pacem Vatican",
+      "members": ["550e8400-e29b-41d4-a716-446655440114"],
+      "reputation": 55
+    }
+  },
+  {
+    "model": "worlds.event",
+    "pk": "550e8400-e29b-41d4-a716-446655440E12",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "The Final Shrike Pilgrimage",
+      "description": "Seven pilgrims journey to the Time Tombs as war approaches.",
+      "participants": ["550e8400-e29b-41d4-a716-446655440111", "550e8400-e29b-41d4-a716-446655440113", "550e8400-e29b-41d4-a716-446655440114", "550e8400-e29b-41d4-a716-446655440115", "550e8400-e29b-41d4-a716-446655440116", "550e8400-e29b-41d4-a716-446655440117", "550e8400-e29b-41d4-a716-446655440118"],
+      "location": "550e8400-e29b-41d4-a716-446655440215",
+      "consequences": "One wish granted, others die, future determined",
+      "intensity": 100
+    }
+  },
+  {
+    "model": "worlds.event",
+    "pk": "550e8400-e29b-41d4-a716-446655440E13",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Ouster Invasion of Hyperion",
+      "description": "Massive Ouster fleet approaches to capture Hyperion and the Time Tombs.",
+      "participants": [],
+      "location": "550e8400-e29b-41d4-a716-446655440212",
+      "consequences": "War between Hegemony and Ousters",
+      "intensity": 95
+    }
+  },
+  {
+    "model": "worlds.event",
+    "pk": "550e8400-e29b-41d4-a716-446655440E14",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Hyperion Evacuation",
+      "description": "Hegemony attempts to evacuate civilians before Ouster arrival.",
+      "participants": ["550e8400-e29b-41d4-a716-446655440112"],
+      "location": "550e8400-e29b-41d4-a716-446655440212",
+      "consequences": "Partial evacuation, many stranded",
+      "intensity": 80
+    }
+  },
+  {
+    "model": "worlds.phenomenon",
+    "pk": "550e8400-e29b-41d4-a716-446655440B13",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Anti-Entropic Field",
+      "description": "Time flows backward around the Time Tombs.",
+      "effects": "temporal reversal, causality violations",
+      "frequency": "constant",
+      "intensity": 100,
+      "locations": ["550e8400-e29b-41d4-a716-446655440215", "550e8400-e29b-41d4-a716-446655440216"]
+    }
+  },
+  {
+    "model": "worlds.phenomenon",
+    "pk": "550e8400-e29b-41d4-a716-446655440B14",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Merlin's Sickness",
+      "description": "Reverse aging caused by exposure to anti-entropic fields.",
+      "effects": "victim ages backward to nonexistence",
+      "frequency": "upon exposure",
+      "intensity": 100,
+      "locations": ["550e8400-e29b-41d4-a716-446655440215"]
+    }
+  },
+  {
+    "model": "worlds.construct",
+    "pk": "550e8400-e29b-41d4-a716-446655440C13",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Farcaster Network",
+      "description": "Instantaneous portal system connecting WorldWeb planets.",
+      "function": "interstellar transport",
+      "technology": "singularity manipulation",
+      "creators": ["550e8400-e29b-41d4-a716-446655440711"],
+      "locations": []
+    }
+  },
+  {
+    "model": "worlds.construct",
+    "pk": "550e8400-e29b-41d4-a716-446655440C14",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Treeship Yggdrasill",
+      "description": "Living kilometer-tall tree modified as spacecraft.",
+      "function": "organic spacecraft",
+      "technology": "bioengineering and containment fields",
+      "creators": ["550e8400-e29b-41d4-a716-446655440715"],
+      "locations": []
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F15",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Pilgrims Journey Together",
+      "type": "alliance",
+      "actor": "550e8400-e29b-41d4-a716-446655440A12",
+      "involves_characters": ["550e8400-e29b-41d4-a716-446655440111", "550e8400-e29b-41d4-a716-446655440113", "550e8400-e29b-41d4-a716-446655440114", "550e8400-e29b-41d4-a716-446655440115", "550e8400-e29b-41d4-a716-446655440116", "550e8400-e29b-41d4-a716-446655440117", "550e8400-e29b-41d4-a716-446655440118"],
+      "involves_locations": ["550e8400-e29b-41d4-a716-446655440215"],
+      "involves_objects": [],
+      "involves_events": ["550e8400-e29b-41d4-a716-446655440E12"],
+      "intensity": 75,
+      "background": "Chosen by lottery for final pilgrimage"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F16",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Ousters Threaten Hegemony",
+      "type": "conflict",
+      "actor": "550e8400-e29b-41d4-a716-446655440A14",
+      "involves_characters": [],
+      "involves_locations": ["550e8400-e29b-41d4-a716-446655440212"],
+      "involves_objects": ["550e8400-e29b-41d4-a716-446655440316", "550e8400-e29b-41d4-a716-446655440317", "550e8400-e29b-41d4-a716-446655440318"],
+      "involves_events": ["550e8400-e29b-41d4-a716-446655440E13"],
+      "intensity": 95,
+      "background": "Barbarian invasion or strategic conquest"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F17",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Hoyt Bears Cruciform Curse",
+      "type": "affliction",
+      "actor": "550e8400-e29b-41d4-a716-446655440114",
+      "involves_characters": ["550e8400-e29b-41d4-a716-446655440114"],
+      "involves_locations": [],
+      "involves_objects": ["550e8400-e29b-41d4-a716-446655440319"],
+      "involves_events": [],
+      "intensity": 90,
+      "background": "Parasites grant immortality with constant pain"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F18",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Rachel Ages Backward",
+      "type": "affliction",
+      "actor": "550e8400-e29b-41d4-a716-446655440116",
+      "involves_characters": ["550e8400-e29b-41d4-a716-446655440116"],
+      "involves_locations": ["550e8400-e29b-41d4-a716-446655440215"],
+      "involves_objects": [],
+      "involves_events": [],
+      "intensity": 100,
+      "background": "Merlin's Sickness from Time Tomb exposure"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F19",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Silenus Writes Reality",
+      "type": "creation",
+      "actor": "550e8400-e29b-41d4-a716-446655440117",
+      "involves_characters": ["550e8400-e29b-41d4-a716-446655440117"],
+      "involves_locations": [],
+      "involves_objects": ["550e8400-e29b-41d4-a716-446655440320"],
+      "involves_events": [],
+      "intensity": 85,
+      "background": "Epic poem may control or summon the Shrike"
+    }
+  },
+  {
+    "model": "worlds.relation",
+    "pk": "550e8400-e29b-41d4-a716-446655440F20",
+    "fields": {
+      "world": "550e8400-e29b-41d4-a716-446655440002",
+      "name": "Kassad Seeks Warrior Destiny",
+      "type": "quest",
+      "actor": "550e8400-e29b-41d4-a716-446655440115",
+      "involves_characters": ["550e8400-e29b-41d4-a716-446655440115"],
+      "involves_locations": ["550e8400-e29b-41d4-a716-446655440215"],
+      "involves_objects": [],
+      "involves_events": ["550e8400-e29b-41d4-a716-446655440E12"],
+      "intensity": 90,
+      "background": "Destined to face the Shrike in combat"
+    }
+  }
+]

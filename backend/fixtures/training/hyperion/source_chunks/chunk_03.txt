@@ -1,0 +1,165 @@
+
+</div>
+</div>
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #fbbf24; line-height: 1.6;">
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">webhook</span><strong><a href="/docs/specification/element_categories/object">Object</a></strong> 'Vikken EMV'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Vehicle - Transport</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">auto_fix_normal</span><strong><a href="/docs/specification/element_categories/ability">Ability</a></strong> 'Big Game Hunting'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Survival</span>
+</div>
+
+<div style="margin-bottom: 0;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">castle</span><strong><a href="/docs/specification/element_categories/location">Location</a></strong> 'Fern Forests'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Biome - Forest</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #4a5568; line-height: 1.8;">
+
+He climbed the <strong>spiral staircase</strong> to his sleeping cabin at the apex of the ship. The circular room was dark except for silent explosions of lightning which outlined rivulets of rain coursing the skylight. The Consul stripped, lay back on the firm mattress, and switched on the <strong>sound system</strong> and external audio pickups. He listened as the fury of the storm blended with the violence of Wagner's 'Flight of the Valkyries'. <strong>Hurricane winds</strong> buffeted the ship.
+
+</div>
+</div>
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #fbbf24; line-height: 1.6;">
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">webhook</span><strong><a href="/docs/specification/element_categories/object">Object</a></strong> 'Spiral Staircase'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Component - Structural</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">webhook</span><strong><a href="/docs/specification/element_categories/object">Object</a></strong> 'Sound System'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Machine - AudioVisual</span>
+</div>
+
+<div style="margin-bottom: 0;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">thunderstorm</span><strong><a href="/docs/specification/element_categories/phenomenon">Phenomenon</a></strong> 'Hurricane Winds'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Meteorological - Wind</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #4a5568; line-height: 1.8;">
+
+Wagner is good only for thunderstorms, he thought. He closed his eyes but the lightning was visible through closed eyelids. He remembered the glint of <strong>ice crystals</strong> blowing through the <strong>tumbled ruins</strong> on the <strong>low hills near the Time Tombs</strong> and the colder gleam of steel on the Shrike's impossible tree of metal thorns. He remembered <strong>screams in the night</strong> and the hundred-facet, ruby-and-blood gaze of the Shrike itself.
+
+</div>
+</div>
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #fbbf24; line-height: 1.6;">
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">webhook</span><strong><a href="/docs/specification/element_categories/object">Object</a></strong> 'Ice Crystals'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Resource - Natural</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">castle</span><strong><a href="/docs/specification/element_categories/location">Location</a></strong> 'Low Hills near the Time Tombs'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Geographical - Hills</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">castle</span><strong><a href="/docs/specification/element_categories/location">Location</a></strong> 'Tumbled Ruins'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Settlement - Abandoned</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">webhook</span><strong><a href="/docs/specification/element_categories/object">Object</a></strong> 'Shrike's Tree of Metal Thorns'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Weapon - Supernatural</span>
+</div>
+
+<div style="margin-bottom: 0;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">saved_search</span><strong><a href="/docs/specification/element_categories/event">Event</a></strong> 'Screams in the Night'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Violence</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #4a5568; line-height: 1.8;">
+
+The Consul silently commanded the computer to shut off all speakers and raised his wrist to cover his eyes. In the sudden silence he lay thinking about how insane it would be to return to Hyperion. During his eleven years as Consul on that distant and enigmatic world, the mysterious Church of the Shrike had allowed a dozen barges of <strong>offworld pilgrims</strong> to depart for the <strong>windswept barrens</strong> around the Time Tombs, north of the mountains. No one had returned.
+
+</div>
+</div>
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #fbbf24; line-height: 1.6;">
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">api</span><strong><a href="/docs/specification/element_categories/construct">Construct</a></strong> 'Silent Computer Controls'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Technology - Operation</span>
+</div>
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">saved_search</span><strong><a href="/docs/specification/element_categories/event">Event</a></strong> 'Offworld Pilgrimages to the Time Tombs'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Cultural - Journey</span>
+</div>
+
+<div style="margin-bottom: 0;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">castle</span><strong><a href="/docs/specification/element_categories/location">Location</a></strong> 'Windswept Barrens'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Geographical - Plains</span>
+</div>
+
+</div>
+</div>
+
+</div>
+
+</details>
+
+<details>
+<summary style="cursor: pointer; font-weight: bold; margin: 20px 0;">Departure</summary>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 40px 0;">
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #4a5568; line-height: 1.8;">
+
+The Consul thought of the Shrike, free to wander everywhere on Hyperion, of the millions of indigenies and thousands of Hegemony citizens helpless before a creature which defied physical laws and which communicated only through death, and he shivered despite the warmth of the cabin. Hyperion. The night and storm passed. Another stormfront raced ahead of the approaching dawn. Gymnosperms two hundred meters tall bent and whipped before the coming torrent. Just before first light, the Consul's ebony spaceship rose on a tail of <strong>blue plasma</strong> and punched through thickening clouds as it climbed toward space and rendezvous.
+
+</div>
+</div>
+
+<div>
+<div style="background: #2d3748; padding: 25px; border-radius: 8px; border-left: 3px solid #fbbf24; line-height: 1.6;">
+
+<div style="margin-bottom: 15px;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">thunderstorm</span><strong><a href="/docs/specification/element_categories/phenomenon">Phenomenon</a></strong> 'Blue Plasma Tail'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Energy</span>
+</div>
+
+<div style="margin-bottom: 0;">
+<span class="material-symbols-outlined" style="vertical-align: middle; margin-right: 8px;">saved_search</span><strong><a href="/docs/specification/element_categories/event">Event</a></strong> 'Consul Departs for Rendezvous'<br>
+<span style="color: #a0aec0; margin-left: 40px;">Historical</span>
+</div>
+
+</div>

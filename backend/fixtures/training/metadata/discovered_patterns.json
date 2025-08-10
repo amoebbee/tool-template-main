@@ -1,0 +1,275 @@
+{
+  "witness_patterns": [
+    {
+      "name": "Unarmed Observer",
+      "description": "Character present but carries no weapons in violent setting",
+      "markers": ["unarmed", "stood with others", "observes"],
+      "confidence": 0.95,
+      "examples": ["The Kid in Blood Meridian"]
+    },
+    {
+      "name": "Diplomatic Witness",
+      "description": "Authority figure who observes helplessly as events unfold",
+      "markers": ["consul", "diplomat", "receives messages"],
+      "confidence": 0.85,
+      "examples": ["The Hegemony Consul in Hyperion"]
+    },
+    {
+      "name": "Young Observer",
+      "description": "Junior figure (midshipman, child) who survives to tell tale",
+      "markers": ["young", "midshipman", "witnesses"],
+      "confidence": 0.90,
+      "examples": ["John Byron in The Wager"]
+    },
+    {
+      "name": "Afflicted Witness",
+      "description": "Character suffering from curse/disease who can only observe",
+      "markers": ["cursed", "dying", "afflicted"],
+      "confidence": 0.88,
+      "examples": ["Father Hoyt with cruciform", "Sol with aging daughter"]
+    }
+  ],
+  "power_patterns": [
+    {
+      "name": "Truth as Weapon",
+      "description": "Character gains power by exposing hidden truths",
+      "intensity_range": "85-100",
+      "markers": ["exposes", "reveals", "informs"],
+      "examples": ["Judge Holden exposing Reverend"]
+    },
+    {
+      "name": "Institutional Authority",
+      "description": "Power derived from rank and position",
+      "intensity_range": "60-90",
+      "markers": ["commander", "CEO", "commodore"],
+      "examples": ["Meina Gladstone", "Commodore Anson"]
+    },
+    {
+      "name": "Physical Dominance",
+      "description": "Power through size and violence",
+      "intensity_range": "70-100",
+      "markers": ["enormous", "warrior", "soldier"],
+      "examples": ["Judge Holden", "Colonel Kassad"]
+    },
+    {
+      "name": "Survival Leadership",
+      "description": "Authority emerges from practical survival skills",
+      "intensity_range": "50-80",
+      "markers": ["gunner", "practical", "leads survivors"],
+      "examples": ["John Bulkeley"]
+    }
+  ],
+  "relationship_patterns": [
+    {
+      "name": "Authority Chain",
+      "description": "Hierarchical command relationships",
+      "type": "authority",
+      "intensity_formula": "rank_differential * 10 + 50",
+      "examples": ["Gladstone commands Consul", "Anson commands squadron"]
+    },
+    {
+      "name": "Witnessed Destruction",
+      "description": "Observer present at crucial destructive event",
+      "type": "witnessed",
+      "intensity_formula": "event_intensity * 0.8",
+      "examples": ["Kid witnesses Judge's exposure", "Byron witnesses mutiny"]
+    },
+    {
+      "name": "Affliction Bond",
+      "description": "Character bound to curse or disease",
+      "type": "affliction",
+      "intensity_formula": "suffering_level * 10",
+      "examples": ["Hoyt's cruciform", "Rachel's reverse aging"]
+    },
+    {
+      "name": "Rebellion Against Authority",
+      "description": "Rejection of established command",
+      "type": "rebellion",
+      "intensity_formula": "90 minimum",
+      "examples": ["Bulkeley's mutiny", "Ouster invasion"]
+    },
+    {
+      "name": "Cultural Preservation",
+      "description": "Maintaining connection to lost culture",
+      "type": "cultural",
+      "intensity_formula": "60-70",
+      "examples": ["Consul plays Earth music", "Silenus writes poetry"]
+    }
+  ],
+  "element_extraction_patterns": [
+    {
+      "name": "Icon-Guided Extraction",
+      "description": "HTML/emoji markers indicate element types",
+      "reliability": 0.98,
+      "icon_map": {
+        "person_4": "Character",
+        "business": "Institution",
+        "military_tech": "Title",
+        "webhook": "Object/Relation marker",
+        "castle": "Location",
+        "thunderstorm": "Phenomenon",
+        "crib": "Species",
+        "bug_report": "Creature",
+        "groups_3": "Collective",
+        "api": "Construct",
+        "auto_fix_normal": "Ability",
+        "saved_search": "Event",
+        "flaky": "Trait",
+        "psychology": "Mental trait"
+      }
+    },
+    {
+      "name": "HTML Structure Parsing",
+      "description": "Pre-formatted HTML with left/right column structure",
+      "reliability": 0.95,
+      "structure": "Original text left, parsed elements right"
+    },
+    {
+      "name": "Contextual Entity Detection",
+      "description": "Identify entities from narrative context",
+      "reliability": 0.85,
+      "cues": ["proper nouns", "titles", "quoted names", "ship names"]
+    }
+  ],
+  "resource_classification_patterns": [
+    {
+      "name": "Ephemeral Resources",
+      "description": "Temporary, consumable, or information-based",
+      "markers": ["message", "whisper", "drink", "food", "information"],
+      "examples": ["fatline messages", "scotch", "dead poets' words"]
+    },
+    {
+      "name": "Physical Resources",
+      "description": "Tangible objects with permanence",
+      "markers": ["ship", "weapon", "instrument", "chest", "equipment"],
+      "examples": ["Steinway piano", "sea chest", "oilcloth slicker"]
+    },
+    {
+      "name": "Binding Resources",
+      "description": "Legal, social, or supernatural contracts",
+      "markers": ["commission", "papers", "authority", "curse", "oath"],
+      "examples": ["naval commission", "papers of divinity", "cruciform parasite"]
+    }
+  ],
+  "degradation_patterns": [
+    {
+      "name": "Authority Dissolution",
+      "description": "Command structure breaks down under pressure",
+      "trigger": "survival crisis",
+      "examples": ["Naval authority after shipwreck"]
+    },
+    {
+      "name": "Temporal Degradation",
+      "description": "Time itself flows wrong, causing decay",
+      "trigger": "anti-entropic exposure",
+      "examples": ["Merlin's Sickness", "Time Tombs"]
+    },
+    {
+      "name": "Truth Erosion",
+      "description": "Lies and pretense dissolve under scrutiny",
+      "trigger": "exposure event",
+      "examples": ["Reverend's fraud exposed"]
+    },
+    {
+      "name": "Physical Decay",
+      "description": "Bodies and structures break down",
+      "trigger": "time, disease, violence",
+      "examples": ["scurvy", "shipwreck", "cruciform pain"]
+    }
+  ],
+  "field_formatting_patterns": [
+    {
+      "name": "ForeignKey Format",
+      "description": "Single UUID string for one-to-one relations",
+      "format": "\"field_name\": \"uuid-string\"",
+      "examples": [
+        "\"world\": \"550e8400-e29b-41d4-a716-446655440001\"",
+        "\"current_location\": \"550e8400-e29b-41d4-a716-446655440201\"",
+        "\"owned_by\": \"550e8400-e29b-41d4-a716-446655440102\""
+      ]
+    },
+    {
+      "name": "ManyToMany Format",
+      "description": "Array of UUID strings for many-to-many relations",
+      "format": "\"field_name\": [\"uuid1\", \"uuid2\", \"uuid3\"]",
+      "examples": [
+        "\"involves_characters\": [\"uuid1\", \"uuid2\"]",
+        "\"participants\": [\"uuid1\", \"uuid2\", \"uuid3\"]",
+        "\"members\": []"
+      ]
+    },
+    {
+      "name": "Optional ForeignKey",
+      "description": "Can be null for optional relations",
+      "format": "\"field_name\": null",
+      "examples": [
+        "\"current_location\": null",
+        "\"owned_by\": null"
+      ]
+    }
+  ],
+  "special_patterns": [
+    {
+      "name": "Title-Institution Binding",
+      "description": "Titles always link to both holders and institutions",
+      "confidence": 0.95,
+      "implementation": "Create Title with holders[] and institutions[] arrays"
+    },
+    {
+      "name": "Technology Duality",
+      "description": "Technology exists as both Construct (system) and Object (device)",
+      "confidence": 0.90,
+      "implementation": "Create Construct for system, Object for physical manifestation"
+    },
+    {
+      "name": "Collective Evolution",
+      "description": "Groups can split or merge based on events",
+      "confidence": 0.88,
+      "implementation": "Track membership changes through events"
+    },
+    {
+      "name": "Cascading Relations",
+      "description": "One relation triggers creation of others",
+      "confidence": 0.92,
+      "implementation": "Authority creates service, conflict creates alliances"
+    }
+  ],
+  "quality_indicators": {
+    "good_extraction": {
+      "element_density": "15-30 elements per 500 lines",
+      "relationship_density": "3+ relations per major character",
+      "type_diversity": "10+ different element types used",
+      "link_completeness": "All foreign keys resolve",
+      "witness_clarity": "Clear powerless observer identified"
+    },
+    "poor_extraction": {
+      "sparse_elements": "< 10 elements per chunk",
+      "isolated_elements": "< 1 relation per character",
+      "limited_types": "< 5 element types used",
+      "broken_links": "Foreign keys don't resolve",
+      "no_witness": "No clear observer role"
+    }
+  },
+  "edge_cases_resolved": [
+    {
+      "case": "Multiple names for same entity",
+      "solution": "Use most formal name, track aliases in description",
+      "example": "Judge Holden vs The Judge vs bald man"
+    },
+    {
+      "case": "Absent but important objects",
+      "solution": "Create element with null ownership",
+      "example": "Papers of divinity not possessed"
+    },
+    {
+      "case": "Groups vs individuals",
+      "solution": "Create Collective, link members when known",
+      "example": "The Congregation as collective"
+    },
+    {
+      "case": "Natural forces as actors",
+      "solution": "Use Phenomenon for forces, Event for occurrences",
+      "example": "Storms as Phenomenon, specific storm as Event"
+    }
+  ]
+}

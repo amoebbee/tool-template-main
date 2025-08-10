@@ -1,0 +1,194 @@
+{
+  "source_info": {
+    "text": "Blood Meridian (excerpt)",
+    "lines": 15,
+    "chunk_number": 1,
+    "processing_date": "2025-08-09"
+  },
+  "extraction_reasoning": {
+    "the_kid": {
+      "why_extracted": "Central witness figure - pale, thin, unarmed in violent world",
+      "power_assessment": 2,
+      "witness_candidate": true,
+      "reasoning": "Perfect witness archetype: present but powerless, observes without acting, distinguished by being unarmed",
+      "icon_markers": ["person_4", "crib"],
+      "extraction_pattern": "Protagonist identified by opening focus and lack of agency markers"
+    },
+    "judge_holden": {
+      "why_extracted": "Ultimate antagonist - enormous, hairless, destroys through truth",
+      "power_assessment": 10,
+      "witness_candidate": false,
+      "reasoning": "Maximum agency - reshapes reality through words alone, commands attention, exposes hidden truths",
+      "icon_markers": ["person_4", "webhook"],
+      "extraction_pattern": "Power figure identified by physical dominance and narrative control"
+    },
+    "reverend_green": {
+      "why_extracted": "False authority figure exposed as fraud",
+      "power_assessment": 3,
+      "witness_candidate": false,
+      "reasoning": "Has temporary power through deception, but fundamentally hollow",
+      "icon_markers": ["groups_3", "book"],
+      "extraction_pattern": "Authority figure marked by position but undermined by revelation"
+    },
+    "the_kids_father": {
+      "why_extracted": "Background figure showing degradation through drink",
+      "power_assessment": 1,
+      "witness_candidate": false,
+      "reasoning": "Lost all agency to alcohol, exists only in memory and quoted poetry",
+      "icon_markers": ["link", "military_tech", "api"],
+      "extraction_pattern": "Parent figure identified through relationship and degradation state"
+    }
+  },
+  "location_insights": {
+    "revival_tent": {
+      "significance": "Arena for truth vs deception confrontation",
+      "icon_marker": "castle",
+      "pattern": "Enclosed space where power dynamics play out"
+    },
+    "nacogdoches": {
+      "significance": "Frontier town with 'hellholes' - moral ambiguity",
+      "icon_marker": "edit_road",
+      "pattern": "Settlement as corruption nexus"
+    },
+    "dark_woods": {
+      "significance": "Wilderness containing last wolves - dying wildness",
+      "icon_marker": "bug_report",
+      "pattern": "Natural space as refuge for the untamed"
+    }
+  },
+  "relationship_patterns": {
+    "judge_reverend_conflict": {
+      "type": "exposure/destruction",
+      "intensity_reasoning": "95 - complete annihilation of authority",
+      "pattern": "Truth-speaker destroys false prophet",
+      "extraction_cue": "Direct confrontation with revelation of crimes"
+    },
+    "kid_witness_role": {
+      "type": "observation without participation",
+      "intensity_reasoning": "70 - significant but passive",
+      "pattern": "Witness present at crucial moment",
+      "extraction_cue": "Explicitly noted as unarmed, standing apart"
+    },
+    "congregation_influence": {
+      "type": "mass psychological control",
+      "intensity_reasoning": "85 - total silence commanded",
+      "pattern": "Single figure dominates crowd",
+      "extraction_cue": "Crowd reaction describes power dynamic"
+    }
+  },
+  "object_significance": {
+    "oilcloth_slicker": {
+      "weight_logic": "Physical protection hiding terrible nakedness",
+      "resource_classification": "physical - practical item",
+      "symbolic_value": "Civilization's thin covering over raw power"
+    },
+    "judge_hat": {
+      "weight_logic": "Social gesture before violence",
+      "resource_classification": "physical - social marker",
+      "symbolic_value": "False civility removed and adjusted"
+    },
+    "papers_of_divinity": {
+      "weight_logic": "Authority that doesn't exist carries heaviest weight",
+      "resource_classification": "binding - legal/religious document",
+      "symbolic_value": "Absent legitimacy that condemns through absence"
+    }
+  },
+  "parsing_patterns_discovered": [
+    {
+      "pattern_name": "Icon-Guided Extraction",
+      "description": "Emoji/icon markers indicate element types",
+      "examples": {
+        "person_4": "character marker",
+        "castle": "location marker",
+        "webhook": "connection/relation marker",
+        "book": "knowledge/document marker"
+      },
+      "confidence": 0.85
+    },
+    {
+      "pattern_name": "Witness Identification",
+      "description": "Character who observes but doesn't participate, often unarmed or powerless",
+      "markers": ["unarmed", "stood with others", "pale and thin", "child"],
+      "confidence": 0.95
+    },
+    {
+      "pattern_name": "Power Through Revelation",
+      "description": "Characters gain power by exposing hidden truths",
+      "markers": ["inform you", "imposter", "wanted by law", "illiterate"],
+      "confidence": 0.90
+    },
+    {
+      "pattern_name": "Physical Aberration as Power",
+      "description": "Unusual physical traits indicate supernatural authority",
+      "markers": ["bald as stone", "no brows", "no lashes", "enormous"],
+      "confidence": 0.88
+    },
+    {
+      "pattern_name": "Degradation Through Substance",
+      "description": "Characters lose agency through addiction",
+      "markers": ["lies in drink", "quotes from poets whose names are lost"],
+      "confidence": 0.92
+    }
+  ],
+  "field_formatting_validations": {
+    "foreign_keys": {
+      "validated": true,
+      "pattern": "Single UUID string for one-to-one relations",
+      "examples": [
+        "current_location: '550e8400-e29b-41d4-a716-446655440201'",
+        "owned_by: '550e8400-e29b-41d4-a716-446655440102'"
+      ]
+    },
+    "many_to_many": {
+      "validated": true,
+      "pattern": "Array of UUID strings for many-to-many relations",
+      "examples": [
+        "involves_characters: ['uuid1', 'uuid2', 'uuid3']",
+        "participants: ['uuid1', 'uuid2']",
+        "involves_locations: ['uuid1']"
+      ]
+    },
+    "uuid_format": {
+      "validated": true,
+      "pattern": "Standard UUID v4 format",
+      "example": "550e8400-e29b-41d4-a716-446655440001"
+    }
+  },
+  "quality_metrics": {
+    "element_count": 24,
+    "character_count": 4,
+    "location_count": 4,
+    "object_count": 4,
+    "event_count": 2,
+    "relation_count": 5,
+    "trait_count": 2,
+    "institution_count": 1,
+    "collective_count": 1,
+    "phenomenon_count": 1,
+    "relationship_density": 3.75,
+    "witness_clarity": 10,
+    "pattern_novelty": 5,
+    "extraction_confidence": 0.92
+  },
+  "training_insights": {
+    "key_learnings": [
+      "Witnesses are marked by their lack of weapons/power in violent contexts",
+      "Physical descriptions often carry metaphorical weight (bald as stone = inhuman)",
+      "Icon markers in annotated text provide strong element type hints",
+      "Power manifests through ability to reshape social reality with words",
+      "Degradation shows in substance abuse and lost knowledge"
+    ],
+    "edge_cases_resolved": [
+      "Multiple icon markers for same entity - use most specific",
+      "Absent objects (papers not possessed) still extractable as elements",
+      "Congregation as collective vs individual members",
+      "Rain as phenomenon vs mere weather"
+    ],
+    "recommended_improvements": [
+      "Track speech patterns for character voice",
+      "Note temporal markers for event sequencing",
+      "Identify symbolic objects vs practical ones",
+      "Distinguish witnessed events from participated events"
+    ]
+  }
+}
