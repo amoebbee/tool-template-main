@@ -1,0 +1,30 @@
+{
+  "blood_meridian": {
+    "characters": [],
+    "locations": [],
+    "objects": [],
+    "events": [],
+    "relations": [],
+    "treaties": []
+  },
+  "hyperion": {
+    "characters": [],
+    "locations": [],
+    "objects": [],
+    "events": [],
+    "relations": [],
+    "treaties": []
+  },
+  "wager": {
+    "characters": [],
+    "locations": [],
+    "objects": [],
+    "events": [],
+    "relations": [],
+    "treaties": []
+  },
+  "metadata": {
+    "description": "Tracks all extracted elements by type and source",
+    "updated": "2025-08-09"
+  }
+}

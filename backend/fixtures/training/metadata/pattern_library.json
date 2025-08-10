@@ -1,0 +1,12 @@
+{
+  "witness_patterns": [],
+  "power_patterns": [],
+  "relationship_patterns": [],
+  "degradation_patterns": [],
+  "weight_patterns": [],
+  "metadata": {
+    "description": "Reusable parsing patterns discovered during training data creation",
+    "instruction": "Add patterns as they are discovered to avoid repetition",
+    "created": "2025-08-09"
+  }
+}

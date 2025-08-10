@@ -1,0 +1,18 @@
+{
+  "worlds": {
+    "blood_meridian": "550e8400-e29b-41d4-a716-446655440001",
+    "hyperion": "550e8400-e29b-41d4-a716-446655440002",
+    "wager": "550e8400-e29b-41d4-a716-446655440003"
+  },
+  "characters": {},
+  "locations": {},
+  "objects": {},
+  "events": {},
+  "relations": {},
+  "treaties": {},
+  "notes": {
+    "description": "Master UUID registry for consistent element tracking across chunks",
+    "created": "2025-08-09",
+    "format": "element_name: uuid_string"
+  }
+}

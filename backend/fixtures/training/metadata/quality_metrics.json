@@ -1,0 +1,39 @@
+{
+  "overall": {
+    "total_chunks": 0,
+    "processed_chunks": 0,
+    "total_elements": 0,
+    "total_relations": 0,
+    "average_density": 0,
+    "unique_patterns": 0
+  },
+  "by_book": {
+    "blood_meridian": {
+      "chunks_processed": 0,
+      "elements": 0,
+      "relations": 0,
+      "witness_clarity": 0,
+      "relationship_density": 0
+    },
+    "hyperion": {
+      "chunks_processed": 0,
+      "elements": 0,
+      "relations": 0,
+      "witness_clarity": 0,
+      "relationship_density": 0
+    },
+    "wager": {
+      "chunks_processed": 0,
+      "elements": 0,
+      "relations": 0,
+      "witness_clarity": 0,
+      "relationship_density": 0
+    }
+  },
+  "metadata": {
+    "description": "Tracks quality metrics for training data",
+    "target_density": 3,
+    "target_elements_per_chunk": 20,
+    "updated": "2025-08-09"
+  }
+}
